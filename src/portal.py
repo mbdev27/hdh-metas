@@ -129,7 +129,7 @@ def quality_view(q,prefix='quality'):
     st.dataframe(series,hide_index=True,width='stretch')
     if (series.status_dado=='INCONSISTÊNCIA NA FONTE').any():st.warning('A fonte contém percentuais inconsistentes. Os valores foram preservados e sinalizados; não entram no cálculo financeiro.')
     st.caption('PONTUAÇÃO MENSAL · Projeções trimestrais qualitativas não são recalculadas sem evidências suficientes. Ocupação e prontuários sem peso próprio não compõem a parte variável.')
-    foundation(chosen,series.iloc[-1].competencia,prefix)
+    foundation(series.iloc[-1].rule_indicator_id,series.iloc[-1].competencia,prefix)
 
 
 def rules_view():

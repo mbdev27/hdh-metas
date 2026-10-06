@@ -1,5 +1,6 @@
 """Public CMA aggregates. Original observations and normative rules remain separate."""
 import pandas as pd
+import unicodedata
 from src.contract_registry import ROOT,load
 from src.contract_engine import ContractEngine
 from src.scoring import score
@@ -31,11 +32,20 @@ def enrich(data):
         output.append(row)
     return pd.DataFrame(output)
 
+def historical_quality_rule(label,competence):
+    if not ('2022-07'<=competence<'2024-07'): return None
+    text=''.join(c for c in unicodedata.normalize('NFKD',str(label).lower()) if not unicodedata.combining(c))
+    terms=[('acolhimento','OQL01'),('satisfacao','OQL02'),('resolucao','OQL03'),('cnes','OQL04'),('alta complexidade','OQL05'),('prestacao de contas','OQL06'),('transparencia','OQL07'),('vermelho','OQL08'),('obito','OQL09'),('infeccao','OQL10'),('escala medica','OQL11'),('permanencia','OQL12'),('egresso','OQL13'),('educacao','OQL14')]
+    return next((id_ for term,id_ in terms if term in text),None)
+
 def enrich_quality(data):
     engine=ContractEngine();out=[];lookup=names()
     for row in data.to_dict('records'):
-        comp=row['competencia'];id_=row['indicator_id'];r=engine.resolve(id_,str((pd.Timestamp(comp)+pd.offsets.MonthEnd(0)).date()))
-        row['nome']=lookup.get(id_,row['indicador_fonte']);row['pontuacao']=None;row['instrumento_meta']=r['documento_fonte'] if r else 'Definição histórica — consultar meta do parecer';row['regra']=r['rule_id'] if r else None
+        comp=row['competencia'];id_=row['indicator_id']
+        rule_indicator=historical_quality_rule(row['indicador_fonte'],comp) or id_
+        row['rule_indicator_id']=rule_indicator
+        r=engine.resolve(rule_indicator,str((pd.Timestamp(comp)+pd.offsets.MonthEnd(0)).date()))
+        row['nome']=r.get('nome',lookup.get(id_,row['indicador_fonte'])) if r else lookup.get(id_,row['indicador_fonte']);row['pontuacao']=None;row['instrumento_meta']=r['documento_fonte'] if r else 'Definição histórica — consultar meta do parecer';row['regra']=r['rule_id'] if r else None
         row['meta_aplicada']=r['valor'] if r else row['meta_texto_fonte'];row['peso']=r['peso'] if r else None
         row['observacao']='' if pd.isna(row.get('observacao')) else row['observacao']
         if r and r.get('faixas') is not None and row['status_dado'] in ('INFORMADO','ALERTA'):

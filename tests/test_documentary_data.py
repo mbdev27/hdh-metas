@@ -62,3 +62,10 @@ def test_workbook_real_data():
     p,q=real_data();tables={'Resumo':p,'Produção':p,'Qualidade':q,'Trimestre':aggregate(p),'Monitoramento':q,'Qualidade dos Dados':q,'Regras Contratuais':pd.DataFrame(ContractEngine().rules).astype(str)}
     result=pd.ExcelFile(BytesIO(workbook(tables)))
     assert result.sheet_names==list(tables)
+
+def test_original_quality_provenance():
+    _,q=real_data()
+    r=q[(q.competencia=='2023-01')&q.indicador_fonte.str.contains('Acolhimento')].iloc[0]
+    assert r.instrumento_meta=='DOC003'
+    assert r.regra=='CG018_QUAL01' and r.rule_indicator_id=='OQL01'
+    assert r.pontuacao is None or pd.isna(r.pontuacao)
