@@ -1,0 +1,106 @@
+ Procedimentos hospitalares do SUS - por local de internação - Pernambuco
+Dias permanência por Ano/mês atendimento e Caráter atendimento
+Estabelecimento: 6559379 HOSPITAL DOM HELDER CAMARA
+Período:Jan/2020-Jul/2026
+"Ano/mês atendimento";"Eletivo";"Urgência";"Outros ac trab";"Outras caus ext";"Total"
+"2019";-;1594;72;234;1900
+"..Dezembro/2019";-;1594;72;234;1900
+"2020";32;46439;1992;5439;53902
+"..Janeiro/2020";-;3539;127;761;4427
+"..Fevereiro/2020";-;4286;140;683;5109
+"..Março/2020";-;2585;146;630;3361
+"..Abril/2020";-;3677;147;246;4070
+"..Maio/2020";-;4130;232;300;4662
+"..Junho/2020";-;4637;163;344;5144
+"..Julho/2020";-;4356;138;549;5043
+"..Agosto/2020";-;2587;183;398;3168
+"..Setembro/2020";19;4085;100;328;4532
+"..Outubro/2020";13;4014;59;61;4147
+"..Novembro/2020";-;4538;294;583;5415
+"..Dezembro/2020";-;4005;263;556;4824
+"2021";17;52215;1598;3497;57327
+"  Janeiro/2021";-;4897;221;323;5441
+"  Fevereiro/2021";-;4124;88;336;4548
+"  Março/2021";-;4990;173;298;5461
+"  Abril/2021";-;4974;127;313;5414
+"  Maio/2021";-;4751;181;367;5299
+"  Junho/2021";-;3737;118;288;4143
+"  Julho/2021";13;4478;137;331;4959
+"  Agosto/2021";-;3767;132;350;4249
+"  Setembro/2021";-;4566;107;318;4991
+"  Outubro/2021";-;3927;19;13;3959
+"  Novembro/2021";-;3780;127;247;4154
+"  Dezembro/2021";4;4224;168;313;4709
+"2022";322;45819;1440;2688;50269
+"..Janeiro/2022";1;4476;176;213;4866
+"..Fevereiro/2022";-;4028;93;301;4422
+"..Março/2022";-;3316;114;320;3750
+"..Abril/2022";-;4011;192;362;4565
+"..Maio/2022";3;3781;120;313;4217
+"..Junho/2022";27;3414;143;233;3817
+"..Julho/2022";-;3843;179;223;4245
+"..Agosto/2022";88;3500;157;342;4087
+"..Setembro/2022";55;3625;110;209;3999
+"..Outubro/2022";71;4407;15;37;4530
+"..Novembro/2022";54;4140;49;11;4254
+"..Dezembro/2022";23;3278;92;124;3517
+"2023";19;43276;1708;2789;47792
+"Janeiro/2023";-;3776;90;188;4054
+"Fevereiro/2023";-;3593;131;216;3940
+"Março/2023";-;3532;208;333;4073
+"Abril/2023";2;3751;29;99;3881
+"Maio/2023";-;3836;11;51;3898
+"Junho/2023";-;3732;154;320;4206
+"Julho/2023";11;3089;72;178;3350
+"Agosto/2023";-;4047;230;246;4523
+"Setembro/2023";-;3182;217;402;3801
+"Outubro/2023";-;3399;350;415;4164
+"Novembro/2023";-;3876;69;287;4232
+"Dezembro/2023";6;3463;147;54;3670
+"2024";4;42832;1697;1704;46237
+"Janeiro/2024";-;4117;216;199;4532
+"Fevereiro/2024";-;3180;148;301;3629
+"Março/2024";-;3268;143;239;3650
+"Abril/2024";-;3349;201;201;3751
+"Maio/2024";-;3790;222;289;4301
+"Junho/2024";-;3160;108;200;3468
+"Julho/2024";-;3339;195;267;3801
+"Agosto/2024";1;4171;66;8;4246
+"Setembro/2024";-;3547;64;-;3611
+"Outubro/2024";3;3654;91;-;3748
+"Novembro/2024";-;3615;150;-;3765
+"Dezembro/2024";-;3642;93;-;3735
+"2025";769;39172;1380;162;41483
+"Janeiro/2025";32;3705;108;-;3845
+"Fevereiro/2025";108;3247;94;-;3449
+"Março/2025";159;3941;128;-;4228
+"Abril/2025";130;3350;57;-;3537
+"Maio/2025";73;3989;88;10;4160
+"Junho/2025";3;4135;103;8;4249
+"Julho/2025";-;2657;28;3;2688
+"Agosto/2025";-;2910;62;19;2991
+"Setembro/2025";38;3134;164;5;3341
+"Outubro/2025";89;2682;146;28;2945
+"Novembro/2025";76;2595;238;24;2933
+"Dezembro/2025";61;2827;164;65;3117
+"2026";203;20687;1202;245;22337
+"Janeiro/2026";40;2936;222;30;3228
+"Fevereiro/2026";34;2407;238;39;2718
+"Março/2026";38;2841;179;53;3111
+"Abril/2026";2;3172;143;23;3340
+"Maio/2026";17;3257;106;31;3411
+"Junho/2026";38;3206;94;41;3379
+"Julho/2026";34;2868;220;28;3150
+"Total";1366;292034;11089;16758;321247
+ Fonte: Ministério da Saúde - Sistema de Informações Hospitalares do SUS (SIH/SUS)
+ Notas:
+ 
+ Dados referentes aos últimos seis meses, sujeitos a  atualização.
+ A partir do processamento de junho de 2012, houve mudança na classificação da natureza e esfera dos estabelecimentos. Com isso, temos que:
+      
+      Até maio de 2012 estas informações estão disponíveis como "Natureza" e "Esfera Administrativa".
+      De junho de 2012 a outubro de 2015, estão disponíveis tanto como "Natureza" e "Esfera Administrativa", como "Natureza Jurídica" e "Esfera Jurídica".
+      A partir de novembro de 2015, estão disponíveis como "Natureza Jurídica" e "Esfera Jurídica".
+      
+ 
+ Consulte o site da Secretaria Estadual de Saúde para mais informações.

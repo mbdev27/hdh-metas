@@ -1,0 +1,29 @@
+unidade: Hospital Metropolitano Sul Dom Helder Câmara
+cnpj: 09.039.744/0008-60
+inauguracao: '2010-07-01'
+municipio: Cabo de Santo Agostinho — Pernambuco
+endereco: Rodovia BR-101 Sul, km 28, Ponte dos Carvalhos
+atendimento: Urgência e emergência — 24 horas por dia
+telefones:
+  - (81) 3183-0000
+  - (81) 3183-0033
+especialidades:
+  - Clínica médica
+  - Cardiologia clínica
+  - Cardiologia intervencionista / hemodinâmica
+  - Cirurgia cardíaca
+  - Traumato-ortopedia
+  - Cirurgia geral e trauma
+  - Cirurgia vascular
+missao: Assistência qualificada e humanizada aos usuários do SUS, com atenção às necessidades da população da Mata Sul e atuação em ensino e pesquisa.
+visao: Buscar acreditação e reconhecimento como hospital de ensino, com gestão sustentável e alinhada às diretrizes da FGH.
+valores: Ética, confiança, qualidade, respeito às diferenças, humanização, compromisso com o SUS e formação das equipes.
+fontes:
+  - nome: Secretaria Estadual de Saúde de Pernambuco
+    url: https://portal.saude.pe.gov.br/hospitais-oss/hospital-metropolitano-sul-dom-helder-camara/
+    cep: 54510-000
+  - nome: Fundação Gestão Hospitalar Martiniano Fernandes — FGH
+    url: https://fghsaude.org.br/home/unidade/hospital-dom-helder/
+    cep: 54580-812
+consulta: '2026-10-06'
+observacao: As páginas institucionais apresentam CEPs distintos. Preservados por fonte; confirmar antes de uso postal. A inauguração é informada pela FGH.

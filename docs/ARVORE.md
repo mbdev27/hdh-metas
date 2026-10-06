@@ -10,21 +10,98 @@ hdh-metas/
   app.py
   config/contract_documents.yaml
   config/contract_rules.yaml
+  config/demo_rules.yaml
   config/indicators.yaml
+  config/institutional.yaml
   config/organizational_units.yaml
+  config/sih_sources.json
   data/mock/producao.csv
   data/mock/qualidade.csv
+  data/real/evidencias.json
+  data/real/producao.csv
+  data/real/qualidade.csv
+  data/sih/observacoes.csv
+  data/sih/originais/sih_cnv_qipe181238186_224_24_204.csv
+  data/sih/originais/sih_cnv_qipe181254186_224_24_204.csv
+  data/sih/originais/sih_cnv_qipe181314186_224_24_204.csv
+  data/sih/originais/sih_cnv_qipe181348186_224_24_204.csv
+  data/sih/originais/sih_cnv_qipe181404186_224_24_204.csv
+  data/sih/originais/sih_cnv_qipe181422186_224_24_204.csv
+  data/sih/originais/sih_cnv_qipe181510186_224_24_204.csv
+  data/sih/originais/sih_cnv_qipe181523186_224_24_204.csv
+  data/sih/originais/sih_cnv_qipe181534186_224_24_204.csv
+  data/sih/originais/sih_cnv_qipe181630186_224_24_204.csv
+  data/sih/originais/sih_cnv_qipe181645186_224_24_204.csv
+  data/sih/originais/sih_cnv_qipe181656186_224_24_204.csv
   docs/ARVORE.md
   docs/AUDITORIA.md
   docs/PITCH.md
   docs/VALIDACAO.md
-  pages/01_Visao_Geral.py
-  pages/02_Producao.py
-  pages/03_Qualidade.py
-  pages/04_Consolidacao_Trimestral.py
-  pages/05_Monitoramento.py
-  pages/06_Governanca_Contratual.py
-  pages/07_Gestao_de_Dados.py
+  documents/DOC001.pdf
+  documents/DOC002.pdf
+  documents/DOC003.pdf
+  documents/DOC004.pdf
+  documents/DOC005.pdf
+  documents/DOC006.pdf
+  documents/DOC007.pdf
+  documents/DOC008.pdf
+  documents/DOC009.pdf
+  documents/DOC010.pdf
+  documents/DOC011.pdf
+  documents/DOC013.pdf
+  documents/DOC014.pdf
+  documents/DOC015.pdf
+  documents/DOC016.pdf
+  documents/DOC017.pdf
+  documents/DOC018.pdf
+  documents/DOC019.pdf
+  documents/DOC020.pdf
+  documents/DOC023.pdf
+  documents/DOC024.pdf
+  documents/DOC025.pdf
+  documents/DOC026.pdf
+  documents/DOC027.pdf
+  documents/DOC028.pdf
+  documents/DOC029.pdf
+  documents/DOC030.pdf
+  documents/DOC031.pdf
+  documents/DOC032.pdf
+  documents/DOC033.pdf
+  documents/DOC034.pdf
+  documents/DOC035.pdf
+  documents/DOC036.pdf
+  documents/DOC037.pdf
+  documents/DOC038.pdf
+  documents/DOC039.pdf
+  documents/DOC040.pdf
+  documents/DOC041.pdf
+  documents/DOC042.pdf
+  documents/DOC043.pdf
+  documents/DOC044.pdf
+  documents/DOC045.pdf
+  documents/DOC046.pdf
+  documents/DOC048.pdf
+  documents/DOC049.pdf
+  documents/DOC050.pdf
+  documents/DOC051.pdf
+  documents/DOC053.pdf
+  documents/DOC054.pdf
+  documents/DOC055.pdf
+  documents/DOC056.pdf
+  documents/DOC057.pdf
+  documents/DOC058.pdf
+  documents/DOC059.pdf
+  documents/DOC060.pdf
+  documents/DOC061.pdf
+  documents/DOC062.pdf
+  documents/DOC063.pdf
+  documents/DOC064.pdf
+  documents/DOC065.pdf
+  pages/01_Tela_Inicial.py
+  pages/02_Indicadores.py
+  pages/03_Instrumentos_de_Gestao.py
+  pages/04_Pareceres_CMA.py
+  pages/05_Producao_Hospitalar.py
   pytest.ini
   requirements.txt
   scripts/audit_documents.py
@@ -36,19 +113,26 @@ hdh-metas/
   src/contract_engine.py
   src/contract_registry.py
   src/data_loader.py
+  src/data_ui.py
   src/data_validation.py
   src/exports.py
   src/formatting.py
+  src/historical.py
   src/indicators.py
+  src/portal.py
   src/scoring.py
+  src/sih.py
+  src/sih_ui.py
   src/theme.py
   src/ui.py
   src/utils.py
   tests/test_auth.py
   tests/test_contract_engine.py
   tests/test_contract_versions.py
+  tests/test_documentary_data.py
   tests/test_quality_scoring.py
   tests/test_quantitative_scoring.py
+  tests/test_sih.py
   tests/test_ui.py
   tests/test_validation.py
 ```

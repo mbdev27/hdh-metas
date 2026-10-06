@@ -13,7 +13,7 @@ def test_rule_versions_and_replacement():
     newer=dict(base,inicio_vigencia='2026-01-01',fim_vigencia=None,valor=20)
     replaced=dict(newer,tipo_alteracao='SUBSTITUÍDA',valor=999)
     e=ContractEngine([base,newer,replaced]);assert e.resolve('X','2025-12')['valor']==10;assert e.resolve('X','2026-01')['valor']==20
-    assert ContractEngine().resolve('Q03','2026-07') is None
+    assert ContractEngine().resolve('Q03','2026-07')['valor']==2520
     assert ContractEngine().resolve('Q03','2026-07',True)['valor']==2520
 
 def test_quarter_missing_is_not_zero():

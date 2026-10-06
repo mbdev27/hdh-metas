@@ -1,0 +1,831 @@
+{
+  "ruleset": "RERR08 — informado no prompt, não auditado",
+  "rules": [
+    {
+      "indicator_id": "Q01",
+      "valor": 856,
+      "peso": 3,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          3
+        ],
+        [
+          70,
+          2
+        ],
+        [
+          55,
+          1.5
+        ],
+        [
+          30,
+          1
+        ]
+      ],
+      "rule_id": "DEMO_Q01",
+      "unidade": "produção/mês",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "Q02",
+      "valor": 2826,
+      "peso": 3,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          3
+        ],
+        [
+          70,
+          2
+        ],
+        [
+          55,
+          1.5
+        ],
+        [
+          30,
+          1
+        ]
+      ],
+      "rule_id": "DEMO_Q02",
+      "unidade": "produção/mês",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "Q03",
+      "valor": 2520,
+      "peso": 3,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          3
+        ],
+        [
+          70,
+          2
+        ],
+        [
+          55,
+          1.5
+        ],
+        [
+          30,
+          1
+        ]
+      ],
+      "rule_id": "DEMO_Q03",
+      "unidade": "produção/mês",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "Q04",
+      "valor": 4730,
+      "peso": 1,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          1
+        ],
+        [
+          70,
+          0.75
+        ],
+        [
+          55,
+          0.5
+        ],
+        [
+          30,
+          0.25
+        ]
+      ],
+      "rule_id": "DEMO_Q04",
+      "unidade": "produção/mês",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "Q05",
+      "valor": 120,
+      "peso": 2,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          2
+        ],
+        [
+          70,
+          1.5
+        ],
+        [
+          55,
+          1
+        ],
+        [
+          30,
+          0.5
+        ]
+      ],
+      "rule_id": "DEMO_Q05",
+      "unidade": "produção/mês",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "Q06",
+      "valor": 136,
+      "peso": 2,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          2
+        ],
+        [
+          70,
+          1.5
+        ],
+        [
+          55,
+          1
+        ],
+        [
+          30,
+          0.5
+        ]
+      ],
+      "rule_id": "DEMO_Q06",
+      "unidade": "produção/mês",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "Q07",
+      "valor": 260,
+      "peso": 2,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          2
+        ],
+        [
+          70,
+          1.5
+        ],
+        [
+          55,
+          1
+        ],
+        [
+          30,
+          0.5
+        ]
+      ],
+      "rule_id": "DEMO_Q07",
+      "unidade": "produção/mês",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "Q08",
+      "valor": 20,
+      "peso": 2,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          2
+        ],
+        [
+          70,
+          1.5
+        ],
+        [
+          55,
+          1
+        ],
+        [
+          30,
+          0.5
+        ]
+      ],
+      "rule_id": "DEMO_Q08",
+      "unidade": "produção/mês",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "Q09",
+      "valor": 152,
+      "peso": 2,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          2
+        ],
+        [
+          70,
+          1.5
+        ],
+        [
+          55,
+          1
+        ],
+        [
+          30,
+          0.5
+        ]
+      ],
+      "rule_id": "DEMO_Q09",
+      "unidade": "produção/mês",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "QL01",
+      "valor": 100,
+      "peso": 0.5,
+      "operador": ">=",
+      "faixas": [
+        [
+          100,
+          0.5
+        ],
+        [
+          85,
+          0.4
+        ],
+        [
+          70,
+          0.3
+        ],
+        [
+          55,
+          0.2
+        ],
+        [
+          40,
+          0.1
+        ]
+      ],
+      "rule_id": "DEMO_QL01",
+      "unidade": "% / condição",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "QL02",
+      "valor": 90,
+      "peso": 1,
+      "operador": ">=",
+      "faixas": [
+        [
+          90,
+          1
+        ],
+        [
+          75,
+          0.8
+        ],
+        [
+          60,
+          0.6
+        ],
+        [
+          45,
+          0.4
+        ],
+        [
+          30,
+          0.2
+        ]
+      ],
+      "rule_id": "DEMO_QL02",
+      "unidade": "% / condição",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "QL03",
+      "valor": 80,
+      "peso": 1,
+      "operador": ">=",
+      "faixas": [
+        [
+          80,
+          1
+        ],
+        [
+          65,
+          0.8
+        ],
+        [
+          50,
+          0.6
+        ],
+        [
+          35,
+          0.4
+        ],
+        [
+          20,
+          0.2
+        ]
+      ],
+      "rule_id": "DEMO_QL03",
+      "unidade": "% / condição",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "QL04",
+      "valor": 0,
+      "peso": 0.5,
+      "operador": "<=",
+      "faixas": [
+        [
+          0,
+          0.5
+        ],
+        [
+          1,
+          0.4
+        ],
+        [
+          2,
+          0.3
+        ],
+        [
+          3,
+          0.2
+        ],
+        [
+          4,
+          0.1
+        ]
+      ],
+      "rule_id": "DEMO_QL04",
+      "unidade": "% / condição",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "QL05",
+      "valor": 10,
+      "peso": 1,
+      "operador": "<=",
+      "faixas": [
+        [
+          10,
+          1
+        ],
+        [
+          15,
+          0.8
+        ],
+        [
+          20,
+          0.6
+        ],
+        [
+          25,
+          0.4
+        ],
+        [
+          30,
+          0.2
+        ]
+      ],
+      "rule_id": "DEMO_QL05",
+      "unidade": "% / condição",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "QL06",
+      "valor": 10,
+      "peso": 1,
+      "operador": "<=",
+      "faixas": [
+        [
+          10,
+          1
+        ],
+        [
+          15,
+          0.8
+        ],
+        [
+          20,
+          0.6
+        ],
+        [
+          25,
+          0.4
+        ],
+        [
+          30,
+          0.2
+        ]
+      ],
+      "rule_id": "DEMO_QL06",
+      "unidade": "% / condição",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "QL07",
+      "valor": 1,
+      "peso": 0.5,
+      "operador": ">=",
+      "faixas": [
+        [
+          1,
+          0.5
+        ]
+      ],
+      "rule_id": "DEMO_QL07",
+      "unidade": "% / condição",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "QL08",
+      "valor": "Desejado",
+      "peso": 1,
+      "operador": ">=",
+      "faixas": {
+        "Desejado": 1,
+        "Moderado": 0.75,
+        "Intermediário": 0.5,
+        "Insuficiente": 0.25,
+        "Crítico": 0
+      },
+      "rule_id": "DEMO_QL08",
+      "unidade": "% / condição",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "QL09",
+      "valor": 90,
+      "peso": 0.5,
+      "operador": ">=",
+      "faixas": [
+        [
+          90,
+          0.5
+        ],
+        [
+          75,
+          0.4
+        ],
+        [
+          60,
+          0.3
+        ],
+        [
+          45,
+          0.2
+        ],
+        [
+          30,
+          0.1
+        ]
+      ],
+      "rule_id": "DEMO_QL09",
+      "unidade": "% / condição",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "QL10",
+      "valor": 7.5,
+      "peso": 1,
+      "operador": "<=",
+      "faixas": [
+        [
+          7.5,
+          1
+        ],
+        [
+          10,
+          0.8
+        ],
+        [
+          12.5,
+          0.6
+        ],
+        [
+          15,
+          0.4
+        ],
+        [
+          17.5,
+          0.2
+        ]
+      ],
+      "rule_id": "DEMO_QL10",
+      "unidade": "% / condição",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "QL11",
+      "valor": 0,
+      "peso": 1,
+      "operador": "<=",
+      "faixas": [
+        [
+          0,
+          1
+        ]
+      ],
+      "rule_id": "DEMO_QL11",
+      "unidade": "% / condição",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "QL12",
+      "valor": 90,
+      "peso": 1,
+      "operador": ">=",
+      "faixas": [
+        [
+          90,
+          1
+        ],
+        [
+          75,
+          0.8
+        ],
+        [
+          60,
+          0.6
+        ],
+        [
+          45,
+          0.4
+        ],
+        [
+          30,
+          0.2
+        ]
+      ],
+      "rule_id": "DEMO_QL12",
+      "unidade": "% / condição",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "M01",
+      "valor": null,
+      "peso": 0,
+      "operador": ">=",
+      "faixas": [],
+      "rule_id": "DEMO_M01",
+      "unidade": "% / condição",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "M02",
+      "valor": null,
+      "peso": 0,
+      "operador": ">=",
+      "faixas": [],
+      "rule_id": "DEMO_M02",
+      "unidade": "% / condição",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "M03",
+      "valor": null,
+      "peso": 0,
+      "operador": ">=",
+      "faixas": [],
+      "rule_id": "DEMO_M03",
+      "unidade": "% / condição",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "M04",
+      "valor": 85,
+      "peso": 0,
+      "operador": ">=",
+      "faixas": [],
+      "rule_id": "DEMO_M04",
+      "unidade": "% / condição",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    },
+    {
+      "indicator_id": "M05",
+      "valor": 10,
+      "peso": 0,
+      "operador": ">=",
+      "faixas": [],
+      "rule_id": "DEMO_M05",
+      "unidade": "% / condição",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "documento_fonte": "RERR08",
+      "pagina_fonte": null,
+      "secao_fonte": "Anexos Técnicos — referência do prompt",
+      "documento_anterior": "TA08",
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "Necessita validação documental",
+      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+    }
+  ]
+}

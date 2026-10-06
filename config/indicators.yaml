@@ -212,6 +212,38 @@
       "formula": "ratio",
       "denominador": "prontuarios_vermelho_amarelo_total",
       "status_financeiro": "PENDENTE DE VALIDAÇÃO DOCUMENTAL"
+    },
+    {
+      "indicator_id": "H_AMB",
+      "nome": "Atendimentos Ambulatoriais — Contrato 006/2010",
+      "grupo": "quantitativo",
+      "campo": null,
+      "formula": "direct",
+      "denominador": null
+    },
+    {
+      "indicator_id": "H_CIR",
+      "nome": "Cirurgias Totais — Contrato 006/2010",
+      "grupo": "quantitativo",
+      "campo": null,
+      "formula": "direct",
+      "denominador": null
+    },
+    {
+      "indicator_id": "H_HEMO",
+      "nome": "Hemodiálises — Contrato 006/2010",
+      "grupo": "quantitativo",
+      "campo": null,
+      "formula": "direct",
+      "denominador": null
+    },
+    {
+      "indicator_id": "Q_TOTAL",
+      "nome": "Cirurgias Totais — anexo original 018/2022",
+      "grupo": "quantitativo",
+      "campo": null,
+      "formula": "direct",
+      "denominador": null
     }
   ]
 }

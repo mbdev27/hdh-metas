@@ -1,6 +1,6 @@
 import pandas as pd
 from src.indicators import indicators
-PRODUCTION=['competencia']+[i['campo'] for i in indicators() if i['grupo']=='quantitativo']+['sadt_producao','sad_emad','sad_emap','sadt_envio_data','sad_envio_data']
+PRODUCTION=['competencia']+[i['campo'] for i in indicators() if i['campo'] and i['grupo']=='quantitativo']+['sadt_producao','sad_emad','sad_emap','sadt_envio_data','sad_envio_data']
 QUALITY=['competencia','pacientes_urgencia','pacientes_classificados','atendimentos_total','pesquisas_respondidas','pesquisas_positivas','queixas_total','queixas_resolvidas','glosas_cnes_percent','glosas_sia_percent','glosas_sih_percent','prestacao_contas_data','transparencia_nivel','obitos_total','obitos_revisados','infeccoes_hospitalares','plantao_restrito_qtd','educacao_previstas','educacao_realizadas','ocupacao_geral','prontuarios_vermelho_amarelo_total','prontuarios_vermelho_amarelo_revisados']
 def validate(frame,kind):
     df=frame.copy();issues=[];bad=set();required=PRODUCTION if kind=='producao' else QUALITY

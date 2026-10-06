@@ -1,5 +1,5 @@
 {
-  "ruleset": "RERR08 — informado no prompt, não auditado",
+  "ruleset": "RERR08 — regra mais recente identificada no corpus disponível",
   "rules": [
     {
       "indicator_id": "Q01",
@@ -24,17 +24,20 @@
           1
         ]
       ],
-      "rule_id": "DEMO_Q01",
+      "rule_id": "RERR08_Q01",
       "unidade": "produção/mês",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 8,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 23,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "Q02",
@@ -59,17 +62,20 @@
           1
         ]
       ],
-      "rule_id": "DEMO_Q02",
+      "rule_id": "RERR08_Q02",
       "unidade": "produção/mês",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 8,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 23,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "Q03",
@@ -94,17 +100,20 @@
           1
         ]
       ],
-      "rule_id": "DEMO_Q03",
+      "rule_id": "RERR08_Q03",
       "unidade": "produção/mês",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 8,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 23,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "Q04",
@@ -129,17 +138,20 @@
           0.25
         ]
       ],
-      "rule_id": "DEMO_Q04",
+      "rule_id": "RERR08_Q04",
       "unidade": "produção/mês",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 8,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 23,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "Q05",
@@ -164,17 +176,20 @@
           0.5
         ]
       ],
-      "rule_id": "DEMO_Q05",
+      "rule_id": "RERR08_Q05",
       "unidade": "produção/mês",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 8,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 26,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "Q06",
@@ -199,17 +214,20 @@
           0.5
         ]
       ],
-      "rule_id": "DEMO_Q06",
+      "rule_id": "RERR08_Q06",
       "unidade": "produção/mês",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 8,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 26,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "Q07",
@@ -234,17 +252,20 @@
           0.5
         ]
       ],
-      "rule_id": "DEMO_Q07",
+      "rule_id": "RERR08_Q07",
       "unidade": "produção/mês",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 8,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 26,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "Q08",
@@ -269,17 +290,20 @@
           0.5
         ]
       ],
-      "rule_id": "DEMO_Q08",
+      "rule_id": "RERR08_Q08",
       "unidade": "produção/mês",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 8,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 26,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "Q09",
@@ -304,17 +328,20 @@
           0.5
         ]
       ],
-      "rule_id": "DEMO_Q09",
+      "rule_id": "RERR08_Q09",
       "unidade": "produção/mês",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 8,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 26,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "QL01",
@@ -343,17 +370,20 @@
           0.1
         ]
       ],
-      "rule_id": "DEMO_QL01",
+      "rule_id": "RERR08_QL01",
       "unidade": "% / condição",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 10,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 28,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "QL02",
@@ -382,17 +412,21 @@
           0.2
         ]
       ],
-      "rule_id": "DEMO_QL02",
+      "rule_id": "RERR08_QL02",
       "unidade": "% / condição",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 10,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 28,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente",
+      "requisito_amostra": "Conversão mínima de 10% dos atendimentos em pesquisas respondidas"
     },
     {
       "indicator_id": "QL03",
@@ -421,17 +455,20 @@
           0.2
         ]
       ],
-      "rule_id": "DEMO_QL03",
+      "rule_id": "RERR08_QL03",
       "unidade": "% / condição",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 10,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 28,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "QL04",
@@ -460,17 +497,20 @@
           0.1
         ]
       ],
-      "rule_id": "DEMO_QL04",
+      "rule_id": "RERR08_QL04",
       "unidade": "% / condição",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 10,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 28,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "QL05",
@@ -499,17 +539,20 @@
           0.2
         ]
       ],
-      "rule_id": "DEMO_QL05",
+      "rule_id": "RERR08_QL05",
       "unidade": "% / condição",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 10,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 28,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "QL06",
@@ -538,17 +581,20 @@
           0.2
         ]
       ],
-      "rule_id": "DEMO_QL06",
+      "rule_id": "RERR08_QL06",
       "unidade": "% / condição",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 10,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 28,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "QL07",
@@ -561,17 +607,21 @@
           0.5
         ]
       ],
-      "rule_id": "DEMO_QL07",
+      "rule_id": "RERR08_QL07",
       "unidade": "% / condição",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 10,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 28,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente",
+      "meta_descritiva": "Entrega até dia 25 do mês subsequente"
     },
     {
       "indicator_id": "QL08",
@@ -585,17 +635,20 @@
         "Insuficiente": 0.25,
         "Crítico": 0
       },
-      "rule_id": "DEMO_QL08",
+      "rule_id": "RERR08_QL08",
       "unidade": "% / condição",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 10,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 28,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "QL09",
@@ -624,17 +677,20 @@
           0.1
         ]
       ],
-      "rule_id": "DEMO_QL09",
+      "rule_id": "RERR08_QL09",
       "unidade": "% / condição",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 11,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 28,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "QL10",
@@ -663,17 +719,20 @@
           0.2
         ]
       ],
-      "rule_id": "DEMO_QL10",
+      "rule_id": "RERR08_QL10",
       "unidade": "% / condição",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 11,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 28,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "QL11",
@@ -686,17 +745,20 @@
           1
         ]
       ],
-      "rule_id": "DEMO_QL11",
+      "rule_id": "RERR08_QL11",
       "unidade": "% / condição",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 11,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 28,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "QL12",
@@ -725,71 +787,83 @@
           0.2
         ]
       ],
-      "rule_id": "DEMO_QL12",
+      "rule_id": "RERR08_QL12",
       "unidade": "% / condição",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 11,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 28,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "M01",
-      "valor": null,
+      "valor": "Envio até o dia 25 do mês subsequente",
       "peso": 0,
-      "operador": ">=",
-      "faixas": [],
-      "rule_id": "DEMO_M01",
-      "unidade": "% / condição",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "operador": "texto",
+      "faixas": null,
+      "rule_id": "RERR08_M01",
+      "unidade": "prazo de entrega",
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 9,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 28,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "M02",
-      "valor": null,
+      "valor": "Envio até o dia 25 do mês subsequente",
       "peso": 0,
-      "operador": ">=",
-      "faixas": [],
-      "rule_id": "DEMO_M02",
-      "unidade": "% / condição",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "operador": "texto",
+      "faixas": null,
+      "rule_id": "RERR08_M02",
+      "unidade": "prazo de entrega",
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 9,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 28,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "M03",
-      "valor": null,
+      "valor": "Envio até o dia 25 do mês subsequente",
       "peso": 0,
-      "operador": ">=",
-      "faixas": [],
-      "rule_id": "DEMO_M03",
-      "unidade": "% / condição",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "operador": "texto",
+      "faixas": null,
+      "rule_id": "RERR08_M03",
+      "unidade": "prazo de entrega",
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 9,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 28,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "M04",
@@ -797,17 +871,20 @@
       "peso": 0,
       "operador": ">=",
       "faixas": [],
-      "rule_id": "DEMO_M04",
+      "rule_id": "RERR08_M04",
       "unidade": "% / condição",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
-      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 11,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra mais recente identificada no corpus disponível. Ausência do 10º TA: necessita validação da cadeia posterior. Data inicial de referência: última assinatura; sem retroatividade presumida.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 28,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
     },
     {
       "indicator_id": "M05",
@@ -815,17 +892,1658 @@
       "peso": 0,
       "operador": ">=",
       "faixas": [],
-      "rule_id": "DEMO_M05",
+      "rule_id": "RERR08_M05",
       "unidade": "% / condição",
-      "inicio_vigencia": null,
-      "fim_vigencia": null,
-      "documento_fonte": "RERR08",
-      "pagina_fonte": null,
-      "secao_fonte": "Anexos Técnicos — referência do prompt",
-      "documento_anterior": "TA08",
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "pagina_fonte": 11,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC019",
+      "tipo_alteracao": "RETIFICADA",
+      "status_validacao": "NECESSITA VALIDAÇÃO DOCUMENTAL",
+      "observacao": "Descrição prevê revisão ≥10%; sem peso próprio na súmula dos 10 p.p. Não atribuir valoração.",
+      "ruleset": "RERR08",
+      "pagina_valoracao": 28,
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "Q01",
+      "valor": 856,
+      "peso": 3,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          3
+        ],
+        [
+          70,
+          2
+        ],
+        [
+          55,
+          1.5
+        ],
+        [
+          30,
+          1
+        ]
+      ],
+      "rule_id": "TA08_Q01",
+      "unidade": "produção/mês",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 10,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 23,
+      "substituida_por": "RERR08_Q01",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "Q02",
+      "valor": 2826,
+      "peso": 3,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          3
+        ],
+        [
+          70,
+          2
+        ],
+        [
+          55,
+          1.5
+        ],
+        [
+          30,
+          1
+        ]
+      ],
+      "rule_id": "TA08_Q02",
+      "unidade": "produção/mês",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 10,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 23,
+      "substituida_por": "RERR08_Q02",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "Q03",
+      "valor": 2520,
+      "peso": 3,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          3
+        ],
+        [
+          70,
+          2
+        ],
+        [
+          55,
+          1.5
+        ],
+        [
+          30,
+          1
+        ]
+      ],
+      "rule_id": "TA08_Q03",
+      "unidade": "produção/mês",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 10,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 23,
+      "substituida_por": "RERR08_Q03",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "Q04",
+      "valor": 4730,
+      "peso": 1,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          1
+        ],
+        [
+          70,
+          0.75
+        ],
+        [
+          55,
+          0.5
+        ],
+        [
+          30,
+          0.25
+        ]
+      ],
+      "rule_id": "TA08_Q04",
+      "unidade": "produção/mês",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 10,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 23,
+      "substituida_por": "RERR08_Q04",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "Q05",
+      "valor": 120,
+      "peso": 2,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          2
+        ],
+        [
+          70,
+          1.5
+        ],
+        [
+          55,
+          1
+        ],
+        [
+          30,
+          0.5
+        ]
+      ],
+      "rule_id": "TA08_Q05",
+      "unidade": "produção/mês",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 10,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 26,
+      "substituida_por": "RERR08_Q05",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "Q06",
+      "valor": 136,
+      "peso": 2,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          2
+        ],
+        [
+          70,
+          1.5
+        ],
+        [
+          55,
+          1
+        ],
+        [
+          30,
+          0.5
+        ]
+      ],
+      "rule_id": "TA08_Q06",
+      "unidade": "produção/mês",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 10,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 26,
+      "substituida_por": "RERR08_Q06",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "Q07",
+      "valor": 260,
+      "peso": 2,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          2
+        ],
+        [
+          70,
+          1.5
+        ],
+        [
+          55,
+          1
+        ],
+        [
+          30,
+          0.5
+        ]
+      ],
+      "rule_id": "TA08_Q07",
+      "unidade": "produção/mês",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 10,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 26,
+      "substituida_por": "RERR08_Q07",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "Q08",
+      "valor": 20,
+      "peso": 2,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          2
+        ],
+        [
+          70,
+          1.5
+        ],
+        [
+          55,
+          1
+        ],
+        [
+          30,
+          0.5
+        ]
+      ],
+      "rule_id": "TA08_Q08",
+      "unidade": "produção/mês",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 10,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 26,
+      "substituida_por": "RERR08_Q08",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "Q09",
+      "valor": 152,
+      "peso": 2,
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          2
+        ],
+        [
+          70,
+          1.5
+        ],
+        [
+          55,
+          1
+        ],
+        [
+          30,
+          0.5
+        ]
+      ],
+      "rule_id": "TA08_Q09",
+      "unidade": "produção/mês",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 10,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 26,
+      "substituida_por": "RERR08_Q09",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "QL01",
+      "valor": 100,
+      "peso": 0.5,
+      "operador": ">=",
+      "faixas": [
+        [
+          100,
+          0.5
+        ],
+        [
+          85,
+          0.4
+        ],
+        [
+          70,
+          0.3
+        ],
+        [
+          55,
+          0.2
+        ],
+        [
+          40,
+          0.1
+        ]
+      ],
+      "rule_id": "TA08_QL01",
+      "unidade": "% / condição",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 12,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 28,
+      "substituida_por": "RERR08_QL01",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "QL02",
+      "valor": 90,
+      "peso": 1,
+      "operador": ">=",
+      "faixas": [
+        [
+          90,
+          1
+        ],
+        [
+          75,
+          0.8
+        ],
+        [
+          60,
+          0.6
+        ],
+        [
+          45,
+          0.4
+        ],
+        [
+          30,
+          0.2
+        ]
+      ],
+      "rule_id": "TA08_QL02",
+      "unidade": "% / condição",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 12,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 28,
+      "substituida_por": "RERR08_QL02",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente",
+      "requisito_amostra": "Conversão mínima de 10% dos atendimentos em pesquisas respondidas"
+    },
+    {
+      "indicator_id": "QL03",
+      "valor": 80,
+      "peso": 1,
+      "operador": ">=",
+      "faixas": [
+        [
+          80,
+          1
+        ],
+        [
+          65,
+          0.8
+        ],
+        [
+          50,
+          0.6
+        ],
+        [
+          35,
+          0.4
+        ],
+        [
+          20,
+          0.2
+        ]
+      ],
+      "rule_id": "TA08_QL03",
+      "unidade": "% / condição",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 12,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 28,
+      "substituida_por": "RERR08_QL03",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "QL04",
+      "valor": 0,
+      "peso": 0.5,
+      "operador": "<=",
+      "faixas": [
+        [
+          0,
+          0.5
+        ],
+        [
+          1,
+          0.4
+        ],
+        [
+          2,
+          0.3
+        ],
+        [
+          3,
+          0.2
+        ],
+        [
+          4,
+          0.1
+        ]
+      ],
+      "rule_id": "TA08_QL04",
+      "unidade": "% / condição",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 12,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 28,
+      "substituida_por": "RERR08_QL04",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "QL05",
+      "valor": 10,
+      "peso": 1,
+      "operador": "<=",
+      "faixas": [
+        [
+          10,
+          1
+        ],
+        [
+          15,
+          0.8
+        ],
+        [
+          20,
+          0.6
+        ],
+        [
+          25,
+          0.4
+        ],
+        [
+          30,
+          0.2
+        ]
+      ],
+      "rule_id": "TA08_QL05",
+      "unidade": "% / condição",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 12,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 28,
+      "substituida_por": "RERR08_QL05",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "QL06",
+      "valor": 10,
+      "peso": 1,
+      "operador": "<=",
+      "faixas": [
+        [
+          10,
+          1
+        ],
+        [
+          15,
+          0.8
+        ],
+        [
+          20,
+          0.6
+        ],
+        [
+          25,
+          0.4
+        ],
+        [
+          30,
+          0.2
+        ]
+      ],
+      "rule_id": "TA08_QL06",
+      "unidade": "% / condição",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 12,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 28,
+      "substituida_por": "RERR08_QL06",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "QL07",
+      "valor": 1,
+      "peso": 0.5,
+      "operador": ">=",
+      "faixas": [
+        [
+          1,
+          0.5
+        ]
+      ],
+      "rule_id": "TA08_QL07",
+      "unidade": "% / condição",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 12,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 28,
+      "substituida_por": "RERR08_QL07",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente",
+      "meta_descritiva": "Entrega até dia 25 do mês subsequente"
+    },
+    {
+      "indicator_id": "QL08",
+      "valor": "Desejado",
+      "peso": 1,
+      "operador": ">=",
+      "faixas": {
+        "Desejado": 1,
+        "Moderado": 0.75,
+        "Intermediário": 0.5,
+        "Insuficiente": 0.25,
+        "Crítico": 0
+      },
+      "rule_id": "TA08_QL08",
+      "unidade": "% / condição",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 12,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 28,
+      "substituida_por": "RERR08_QL08",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "QL09",
+      "valor": 90,
+      "peso": 0.5,
+      "operador": ">=",
+      "faixas": [
+        [
+          90,
+          0.5
+        ],
+        [
+          75,
+          0.4
+        ],
+        [
+          60,
+          0.3
+        ],
+        [
+          45,
+          0.2
+        ],
+        [
+          30,
+          0.1
+        ]
+      ],
+      "rule_id": "TA08_QL09",
+      "unidade": "% / condição",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 13,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 28,
+      "substituida_por": "RERR08_QL09",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "QL10",
+      "valor": 7.5,
+      "peso": 1,
+      "operador": "<=",
+      "faixas": [
+        [
+          7.5,
+          1
+        ],
+        [
+          10,
+          0.8
+        ],
+        [
+          12.5,
+          0.6
+        ],
+        [
+          15,
+          0.4
+        ],
+        [
+          17.5,
+          0.2
+        ]
+      ],
+      "rule_id": "TA08_QL10",
+      "unidade": "% / condição",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 13,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 28,
+      "substituida_por": "RERR08_QL10",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "QL11",
+      "valor": 0,
+      "peso": 1,
+      "operador": "<=",
+      "faixas": [
+        [
+          0,
+          1
+        ]
+      ],
+      "rule_id": "TA08_QL11",
+      "unidade": "% / condição",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 13,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 28,
+      "substituida_por": "RERR08_QL11",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "QL12",
+      "valor": 90,
+      "peso": 1,
+      "operador": ">=",
+      "faixas": [
+        [
+          90,
+          1
+        ],
+        [
+          75,
+          0.8
+        ],
+        [
+          60,
+          0.6
+        ],
+        [
+          45,
+          0.4
+        ],
+        [
+          30,
+          0.2
+        ]
+      ],
+      "rule_id": "TA08_QL12",
+      "unidade": "% / condição",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 13,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 28,
+      "substituida_por": "RERR08_QL12",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "M01",
+      "valor": "Envio até o dia 25 do mês subsequente",
+      "peso": 0,
+      "operador": "texto",
+      "faixas": null,
+      "rule_id": "TA08_M01",
+      "unidade": "prazo de entrega",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 11,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 28,
+      "substituida_por": "RERR08_M01",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "M02",
+      "valor": "Envio até o dia 25 do mês subsequente",
+      "peso": 0,
+      "operador": "texto",
+      "faixas": null,
+      "rule_id": "TA08_M02",
+      "unidade": "prazo de entrega",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 11,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 28,
+      "substituida_por": "RERR08_M02",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "M03",
+      "valor": "Envio até o dia 25 do mês subsequente",
+      "peso": 0,
+      "operador": "texto",
+      "faixas": null,
+      "rule_id": "TA08_M03",
+      "unidade": "prazo de entrega",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 11,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 28,
+      "substituida_por": "RERR08_M03",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "M04",
+      "valor": 85,
+      "peso": 0,
+      "operador": ">=",
+      "faixas": [],
+      "rule_id": "TA08_M04",
+      "unidade": "% / condição",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 13,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 28,
+      "substituida_por": "RERR08_M04",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "indicator_id": "M05",
+      "valor": 10,
+      "peso": 0,
+      "operador": ">=",
+      "faixas": [],
+      "rule_id": "TA08_M05",
+      "unidade": "% / condição",
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "pagina_fonte": 13,
+      "secao_fonte": "Anexos Técnicos I e III",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "NECESSITA VALIDAÇÃO DOCUMENTAL",
+      "observacao": "Anexos originais do 8º TA, substituídos expressamente pela rerratificação. Consultáveis somente como histórico; transição de julho/2024 necessita validação.",
+      "ruleset": "TA08",
+      "pagina_valoracao": 28,
+      "substituida_por": "RERR08_M05",
+      "status_cadeia": "NECESSITA VALIDAÇÃO DOCUMENTAL — 10º TA ausente"
+    },
+    {
+      "rule_id": "CG018_Q01",
+      "indicator_id": "Q01",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": 856,
+      "peso": 5,
+      "unidade": "produção/mês",
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          5
+        ],
+        [
+          70,
+          3
+        ],
+        [
+          55,
+          2.5
+        ],
+        [
+          30,
+          1
+        ]
+      ],
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 19,
+      "pagina_valoracao": 33,
+      "secao_fonte": "Anexos Técnicos — produção",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra original preservada por intervalo documental identificado; anexos substituídos pelo 8º TA. Não confundir cirurgia total com genérica.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "CG018_Q02",
+      "indicator_id": "Q02",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": 2826,
+      "peso": 5,
+      "unidade": "produção/mês",
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          5
+        ],
+        [
+          70,
+          3
+        ],
+        [
+          55,
+          2.5
+        ],
+        [
+          30,
+          1
+        ]
+      ],
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 20,
+      "pagina_valoracao": 33,
+      "secao_fonte": "Anexos Técnicos — produção",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra original preservada por intervalo documental identificado; anexos substituídos pelo 8º TA. Não confundir cirurgia total com genérica.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "CG018_Q03",
+      "indicator_id": "Q03",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": 4286,
+      "peso": 5,
+      "unidade": "produção/mês",
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          5
+        ],
+        [
+          70,
+          3
+        ],
+        [
+          55,
+          2.5
+        ],
+        [
+          30,
+          1
+        ]
+      ],
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 20,
+      "pagina_valoracao": 33,
+      "secao_fonte": "Anexos Técnicos — produção",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra original preservada por intervalo documental identificado; anexos substituídos pelo 8º TA. Não confundir cirurgia total com genérica.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "CG018_Q_TOTAL",
+      "indicator_id": "Q_TOTAL",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": 688,
+      "peso": 5,
+      "unidade": "produção/mês",
+      "operador": ">=",
+      "faixas": [
+        [
+          85,
+          5
+        ],
+        [
+          70,
+          3
+        ],
+        [
+          55,
+          2.5
+        ],
+        [
+          30,
+          1
+        ]
+      ],
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 19,
+      "pagina_valoracao": 33,
+      "secao_fonte": "Anexos Técnicos — produção",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Regra original preservada por intervalo documental identificado; anexos substituídos pelo 8º TA. Não confundir cirurgia total com genérica.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "CG018_QUAL01",
+      "indicator_id": "OQL01",
+      "nome": "Acolhimento e classificação de risco",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": "Envio do relatório até dia 20 do mês subsequente",
+      "peso": 0.5,
+      "unidade": "conforme definição",
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 21,
+      "secao_fonte": "Anexo Técnico — indicadores qualitativos e súmula pp.22–23",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Meta e peso históricos. Valoração qualitativa original não automatizada; consultar faixas e evidências próprias.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "CG018_QUAL02",
+      "indicator_id": "OQL02",
+      "nome": "Satisfação do usuário",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": "≥90%",
+      "peso": 0.5,
+      "unidade": "conforme definição",
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 21,
+      "secao_fonte": "Anexo Técnico — indicadores qualitativos e súmula pp.22–23",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Meta e peso históricos. Valoração qualitativa original não automatizada; consultar faixas e evidências próprias.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "CG018_QUAL03",
+      "indicator_id": "OQL03",
+      "nome": "Resolução das queixas",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": "≥80%",
+      "peso": 0.5,
+      "unidade": "conforme definição",
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 21,
+      "secao_fonte": "Anexo Técnico — indicadores qualitativos e súmula pp.22–23",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Meta e peso históricos. Valoração qualitativa original não automatizada; consultar faixas e evidências próprias.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "CG018_QUAL04",
+      "indicator_id": "OQL04",
+      "nome": "Médicos cadastrados no CNES",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": "100%",
+      "peso": 0.5,
+      "unidade": "conforme definição",
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 21,
+      "secao_fonte": "Anexo Técnico — indicadores qualitativos e súmula pp.22–23",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Meta e peso históricos. Valoração qualitativa original não automatizada; consultar faixas e evidências próprias.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "CG018_QUAL05",
+      "indicator_id": "OQL05",
+      "nome": "Habilitações em alta complexidade",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": "100% de apresentação SIA/SIH conforme habilitações",
+      "peso": 1,
+      "unidade": "conforme definição",
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 21,
+      "secao_fonte": "Anexo Técnico — indicadores qualitativos e súmula pp.22–23",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Meta e peso históricos. Valoração qualitativa original não automatizada; consultar faixas e evidências próprias.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "CG018_QUAL06",
+      "indicator_id": "OQL06",
+      "nome": "Prestação de contas",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": "Envio até dia 20 do mês subsequente",
+      "peso": 1,
+      "unidade": "conforme definição",
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 21,
+      "secao_fonte": "Anexo Técnico — indicadores qualitativos e súmula pp.22–23",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Meta e peso históricos. Valoração qualitativa original não automatizada; consultar faixas e evidências próprias.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "CG018_QUAL07",
+      "indicator_id": "OQL07",
+      "nome": "Informação e transparência",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": "Publicação e relatório até dia 20",
+      "peso": 1,
+      "unidade": "conforme definição",
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 21,
+      "secao_fonte": "Anexo Técnico — indicadores qualitativos e súmula pp.22–23",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Meta e peso históricos. Valoração qualitativa original não automatizada; consultar faixas e evidências próprias.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "CG018_QUAL08",
+      "indicator_id": "OQL08",
+      "nome": "Revisão de prontuários vermelho/amarelo",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": "≥90%",
+      "peso": 1,
+      "unidade": "conforme definição",
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 21,
+      "secao_fonte": "Anexo Técnico — indicadores qualitativos e súmula pp.22–23",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Meta e peso históricos. Valoração qualitativa original não automatizada; consultar faixas e evidências próprias.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "CG018_QUAL09",
+      "indicator_id": "OQL09",
+      "nome": "Revisão de óbitos",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": "≥90%",
+      "peso": 1,
+      "unidade": "conforme definição",
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 21,
+      "secao_fonte": "Anexo Técnico — indicadores qualitativos e súmula pp.22–23",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Meta e peso históricos. Valoração qualitativa original não automatizada; consultar faixas e evidências próprias.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "CG018_QUAL10",
+      "indicator_id": "OQL10",
+      "nome": "Infecção hospitalar",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": "≤7,5%",
+      "peso": 1,
+      "unidade": "conforme definição",
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 22,
+      "secao_fonte": "Anexo Técnico — indicadores qualitativos e súmula pp.22–23",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Meta e peso históricos. Valoração qualitativa original não automatizada; consultar faixas e evidências próprias.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "CG018_QUAL11",
+      "indicator_id": "OQL11",
+      "nome": "Escala médica",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": "Execução mensal completa",
+      "peso": 0.5,
+      "unidade": "conforme definição",
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 22,
+      "secao_fonte": "Anexo Técnico — indicadores qualitativos e súmula pp.22–23",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Meta e peso históricos. Valoração qualitativa original não automatizada; consultar faixas e evidências próprias.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "CG018_QUAL12",
+      "indicator_id": "OQL12",
+      "nome": "Permanência hospitalar",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": "Referência por clínica; consultar tabela de leitos",
+      "peso": 0.5,
+      "unidade": "conforme definição",
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 22,
+      "secao_fonte": "Anexo Técnico — indicadores qualitativos e súmula pp.22–23",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Meta e peso históricos. Valoração qualitativa original não automatizada; consultar faixas e evidências próprias.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "CG018_QUAL13",
+      "indicator_id": "OQL13",
+      "nome": "Ambulatório de egresso",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": "100% de agendamento da primeira consulta na alta",
+      "peso": 0.5,
+      "unidade": "conforme definição",
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 22,
+      "secao_fonte": "Anexo Técnico — indicadores qualitativos e súmula pp.22–23",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Meta e peso históricos. Valoração qualitativa original não automatizada; consultar faixas e evidências próprias.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "CG018_QUAL14",
+      "indicator_id": "OQL14",
+      "nome": "Educação permanente",
+      "ruleset": "CG018_ORIGINAL",
+      "valor": "≥90%",
+      "peso": 0.5,
+      "unidade": "conforme definição",
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "pagina_fonte": 22,
+      "secao_fonte": "Anexo Técnico — indicadores qualitativos e súmula pp.22–23",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "observacao": "Meta e peso históricos. Valoração qualitativa original não automatizada; consultar faixas e evidências próprias.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "H006_Q01",
+      "indicator_id": "Q01",
+      "ruleset": "H006_CMA",
+      "valor": 793,
+      "peso": null,
+      "unidade": "produção/mês",
+      "operador": ">=",
+      "faixas": null,
+      "inicio_vigencia": "2020-01-01",
+      "fim_vigencia": "2022-06-30",
+      "documento_fonte": "DOC037",
+      "pagina_fonte": 5,
+      "secao_fonte": "Metas informadas no parecer CMA",
+      "documento_anterior": null,
       "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
-      "status_validacao": "Necessita validação documental",
-      "observacao": "Regra declarada no prompt. Datas e páginas não fornecidas. Aplicação somente em cenário demonstrativo, sem afirmar vigência jurídica."
+      "status_validacao": "FONTE SECUNDÁRIA HISTÓRICA",
+      "observacao": "Contrato 006/2010 não fornecido. Fonte secundária; não se afirma instrumento instituidor original.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "H006_Q02",
+      "indicator_id": "Q02",
+      "ruleset": "H006_CMA",
+      "valor": 2400,
+      "peso": null,
+      "unidade": "produção/mês",
+      "operador": ">=",
+      "faixas": null,
+      "inicio_vigencia": "2020-01-01",
+      "fim_vigencia": "2022-06-30",
+      "documento_fonte": "DOC037",
+      "pagina_fonte": 5,
+      "secao_fonte": "Metas informadas no parecer CMA",
+      "documento_anterior": null,
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "FONTE SECUNDÁRIA HISTÓRICA",
+      "observacao": "Contrato 006/2010 não fornecido. Fonte secundária; não se afirma instrumento instituidor original.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "H006_H_AMB",
+      "indicator_id": "H_AMB",
+      "ruleset": "H006_CMA",
+      "valor": 3500,
+      "peso": null,
+      "unidade": "produção/mês",
+      "operador": ">=",
+      "faixas": null,
+      "inicio_vigencia": "2020-01-01",
+      "fim_vigencia": "2022-06-30",
+      "documento_fonte": "DOC037",
+      "pagina_fonte": 6,
+      "secao_fonte": "Metas informadas no parecer CMA",
+      "documento_anterior": null,
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "FONTE SECUNDÁRIA HISTÓRICA",
+      "observacao": "Contrato 006/2010 não fornecido. Fonte secundária; não se afirma instrumento instituidor original.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "H006_H_CIR",
+      "indicator_id": "H_CIR",
+      "ruleset": "H006_CMA",
+      "valor": 480,
+      "peso": null,
+      "unidade": "produção/mês",
+      "operador": ">=",
+      "faixas": null,
+      "inicio_vigencia": "2020-01-01",
+      "fim_vigencia": "2022-06-30",
+      "documento_fonte": "DOC037",
+      "pagina_fonte": 6,
+      "secao_fonte": "Metas informadas no parecer CMA",
+      "documento_anterior": null,
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "FONTE SECUNDÁRIA HISTÓRICA",
+      "observacao": "Contrato 006/2010 não fornecido. Fonte secundária; não se afirma instrumento instituidor original.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "rule_id": "H006_H_HEMO",
+      "indicator_id": "H_HEMO",
+      "ruleset": "H006_CMA",
+      "valor": 340,
+      "peso": null,
+      "unidade": "produção/mês",
+      "operador": ">=",
+      "faixas": null,
+      "inicio_vigencia": "2020-01-01",
+      "fim_vigencia": "2022-06-30",
+      "documento_fonte": "DOC037",
+      "pagina_fonte": 6,
+      "secao_fonte": "Metas informadas no parecer CMA",
+      "documento_anterior": null,
+      "tipo_alteracao": "PENDENTE_DE_VALIDAÇÃO",
+      "status_validacao": "FONTE SECUNDÁRIA HISTÓRICA",
+      "observacao": "Contrato 006/2010 não fornecido. Fonte secundária; não se afirma instrumento instituidor original.",
+      "status_cadeia": "Intervalo identificado no corpus; documentos anteriores podem estar ausentes"
+    },
+    {
+      "ruleset": "CG018_ORIGINAL",
+      "peso": 0,
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "status_cadeia": "Necessita validação da cadeia; 1º TA não fornecido",
+      "secao_fonte": "Anexo Técnico I — atividades e monitoramento",
+      "rule_id": "CG018_ACT_ELETIVAS",
+      "indicator_id": "ACT_ELETIVAS",
+      "valor": 539,
+      "pagina_fonte": 19,
+      "unidade": "procedimentos/mês",
+      "observacao": "Referência de composição da cirurgia total original, não pontuada individualmente."
+    },
+    {
+      "ruleset": "CG018_ORIGINAL",
+      "peso": 0,
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "status_cadeia": "Necessita validação da cadeia; 1º TA não fornecido",
+      "secao_fonte": "Anexo Técnico I — atividades e monitoramento",
+      "rule_id": "CG018_ACT_URG_CIR",
+      "indicator_id": "ACT_URG_CIR",
+      "valor": 149,
+      "pagina_fonte": 19,
+      "unidade": "procedimentos/mês",
+      "observacao": "Referência de composição da cirurgia total original, não pontuada individualmente."
+    },
+    {
+      "ruleset": "CG018_ORIGINAL",
+      "peso": 0,
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "status_cadeia": "Necessita validação da cadeia; 1º TA não fornecido",
+      "secao_fonte": "Anexo Técnico I — atividades e monitoramento",
+      "rule_id": "CG018_ACT_JOELHO",
+      "indicator_id": "ACT_JOELHO",
+      "valor": 20,
+      "pagina_fonte": 19,
+      "unidade": "procedimentos/mês",
+      "observacao": "Exigência de pelo menos 20 artroplastias na descrição da cirurgia total; não possui peso próprio original."
+    },
+    {
+      "ruleset": "CG018_ORIGINAL",
+      "peso": 0,
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "status_cadeia": "Necessita validação da cadeia; 1º TA não fornecido",
+      "secao_fonte": "Anexo Técnico I — atividades e monitoramento",
+      "rule_id": "CG018_M01",
+      "indicator_id": "M01",
+      "valor": "Envio mensal; relatório até dia 20 do mês subsequente",
+      "pagina_fonte": 19,
+      "unidade": "prazo",
+      "observacao": "Monitoramento SADT sem peso financeiro."
+    },
+    {
+      "ruleset": "CG018_ORIGINAL",
+      "peso": 0,
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "status_cadeia": "Necessita validação da cadeia; 1º TA não fornecido",
+      "secao_fonte": "Anexo Técnico I — atividades e monitoramento",
+      "rule_id": "CG018_M02",
+      "indicator_id": "M02",
+      "valor": "Capacidade: tabela 66/mês; descrição até 65 pacientes/equipe",
+      "pagina_fonte": 20,
+      "unidade": "capacidade referencial",
+      "observacao": "Divergência entre tabela e descrição. Não tratar capacidade como meta financeira."
+    },
+    {
+      "ruleset": "CG018_ORIGINAL",
+      "peso": 0,
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2022-07-01",
+      "fim_vigencia": "2024-06-30",
+      "documento_fonte": "DOC003",
+      "documento_anterior": null,
+      "tipo_alteracao": "CRIADA",
+      "status_validacao": "VALIDADA",
+      "status_cadeia": "Necessita validação da cadeia; 1º TA não fornecido",
+      "secao_fonte": "Anexo Técnico I — atividades e monitoramento",
+      "rule_id": "CG018_M03",
+      "indicator_id": "M03",
+      "valor": "Capacidade: tabela 66/mês; descrição até 65 pacientes/equipe",
+      "pagina_fonte": 20,
+      "unidade": "capacidade referencial",
+      "observacao": "Divergência entre tabela e descrição. Não tratar capacidade como meta financeira."
+    },
+    {
+      "ruleset": "TA08",
+      "peso": 0,
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2024-07-01",
+      "fim_vigencia": "2024-07-14",
+      "documento_fonte": "DOC019",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "status_cadeia": "Necessita validação da cadeia; 1º TA não fornecido",
+      "secao_fonte": "Anexo Técnico I — atividades e monitoramento",
+      "rule_id": "TA08_ACT_TOTAL",
+      "indicator_id": "ACT_TOTAL",
+      "valor": 688,
+      "unidade": "procedimentos/mês",
+      "pagina_fonte": 9,
+      "observacao": "Referência de produção cirúrgica total. Não somar aos nove indicadores valorados nem presumir subconjunto de artroplastias."
+    },
+    {
+      "ruleset": "RERR08",
+      "peso": 0,
+      "operador": "texto",
+      "faixas": null,
+      "inicio_vigencia": "2024-07-15",
+      "fim_vigencia": "2028-06-30",
+      "documento_fonte": "DOC017",
+      "documento_anterior": "DOC003",
+      "tipo_alteracao": "ALTERADA",
+      "status_validacao": "VALIDADA",
+      "status_cadeia": "Necessita validação da cadeia; 1º TA não fornecido",
+      "secao_fonte": "Anexo Técnico I — atividades e monitoramento",
+      "rule_id": "RERR08_ACT_TOTAL",
+      "indicator_id": "ACT_TOTAL",
+      "valor": 688,
+      "unidade": "procedimentos/mês",
+      "pagina_fonte": 6,
+      "observacao": "Referência de produção cirúrgica total. Não somar aos nove indicadores valorados nem presumir subconjunto de artroplastias."
     }
   ]
 }
