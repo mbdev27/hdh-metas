@@ -6,4 +6,4 @@ textColor = "#16324f"
 [server]
 maxUploadSize = 20
 [client]
-showSidebarNavigation = false
+showSidebarNavigation = true

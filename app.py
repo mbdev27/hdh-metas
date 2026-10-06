@@ -1,8 +1,8 @@
 import streamlit as st
 from src.auth import require_login
 from src.theme import apply_theme
-st.set_page_config(page_title='HDH Metas',page_icon='🏥',layout='wide')
+st.set_page_config(page_title='HDH Metas',page_icon='🏥',layout='wide',initial_sidebar_state='expanded')
 apply_theme()
 require_login()
 pages=[st.Page('pages/01_Tela_Inicial.py',title='Tela inicial',icon=':material/home:',default=True),st.Page('pages/02_Indicadores.py',title='Indicadores',icon=':material/monitoring:'),st.Page('pages/03_Instrumentos_de_Gestao.py',title='Instrumentos de gestão',icon=':material/folder_open:'),st.Page('pages/04_Pareceres_CMA.py',title='Pareceres CMA',icon=':material/description:'),st.Page('pages/05_Producao_Hospitalar.py',title='Produção Hospitalar',icon=':material/local_hospital:')]
-st.navigation(pages).run()
+st.navigation(pages,position='sidebar').run()
