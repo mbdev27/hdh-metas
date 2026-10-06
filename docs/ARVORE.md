@@ -120,6 +120,7 @@ hdh-metas/
   src/historical.py
   src/indicators.py
   src/portal.py
+  src/safe_ui.py
   src/scoring.py
   src/sih.py
   src/sih_ui.py
@@ -130,6 +131,7 @@ hdh-metas/
   tests/test_contract_engine.py
   tests/test_contract_versions.py
   tests/test_documentary_data.py
+  tests/test_presentation.py
   tests/test_quality_scoring.py
   tests/test_quantitative_scoring.py
   tests/test_sih.py

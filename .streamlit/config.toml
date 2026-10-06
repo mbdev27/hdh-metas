@@ -7,3 +7,4 @@ textColor = "#16324f"
 maxUploadSize = 20
 [client]
 showSidebarNavigation = true
+showErrorDetails = "none"

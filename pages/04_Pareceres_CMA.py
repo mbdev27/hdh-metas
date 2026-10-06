@@ -1,2 +1,3 @@
 from src.portal import render
-render('cma')
+from src.safe_ui import run_safely
+run_safely(render,'cma')

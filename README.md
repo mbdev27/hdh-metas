@@ -25,7 +25,7 @@ Sem configuração válida, o acesso é bloqueado. A senha não fica no GitHub. 
 
 - **Tela inicial**: apresentação do hospital, especialidades, missão, visão, valores, endereço e contatos, com fontes SES/PE e FGH. Redação própria e indicação da divergência dos CEPs publicados.
 - **Indicadores**: metas físicas, realizado, diferença, atingimento e pontuação quando aferível; séries mensais, trimestre, comparação anual e fundamentação. Aba de qualidade e monitoramento; metas por versão; gestão de uploads e cenário de simulação.
-- **Instrumentos de gestão**: biblioteca PDF, texto extraído por página, linha do tempo, mapa de alterações, metas instituídas por documento, inventário, lacunas e condições financeiras.
+- **Instrumentos de gestão**: biblioteca com download dos PDFs originais, linha do tempo, mapa de alterações, metas instituídas por documento, inventário, lacunas e condições financeiras.
 - **Produção Hospitalar**: dados SIH/SUS do CNES 6559379, janeiro/2020–julho/2026; AIHs por caráter, grupo e subgrupo, valores aprovados, permanência, óbitos e mortalidade; fonte TabNet e extração em 06/10/2026.
 - **Pareceres CMA**: biblioteca por período, séries por mês e ano, tabelas, evidências e qualidade dos dados.
 
@@ -129,3 +129,5 @@ As exportações trazem também dezembro/2019; esse mês é conservado nos origi
 AIHs aprovadas não equivalem automaticamente a internações, saídas ou procedimentos contratuais. A taxa de mortalidade publicada não é recalculada usando AIHs como denominador presumido. Valores do SIH são distintos do valor mensal do contrato. Os símbolos `-`, `...` e campos vazios são conservados e não se tornam zero automaticamente. A nota da fonte informa que dados dos últimos seis meses estão sujeitos a atualização.
 
 Originais: `data/sih/originais/`; observações normalizadas: `data/sih/observacoes.csv`; metadados e hashes: `config/sih_sources.json`. A página permite filtros, gráficos, tabelas e download dos originais e dos recortes em CSV/XLSX. Não existe consulta automática ao TabNet; a fonte é o conjunto de arquivos fornecido.
+
+A interface utiliza resumos e tabelas gerenciais, sem blocos JSON, hashes ou estruturas internas. A fundamentação legal é referência interna e não aparece na biblioteca. PDFs são oferecidos para download, preservando sua apresentação original. Erros técnicos ficam nos logs do servidor; mensagens do painel não mostram código nem traceback.

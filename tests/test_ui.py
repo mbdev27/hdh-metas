@@ -8,6 +8,8 @@ def test_pages(page):
     at=AppTest.from_file(ROOT/'pages'/(page+'.py'),default_timeout=40)
     for key,value in dict(authenticated=True,username='adm',role='ADMIN',login_time=time.time()).items():at.session_state[key]=value
     at.run();assert not at.exception
+    assert not at.error
+    assert not at.get("json")
 
 @pytest.mark.parametrize('page',['01_Tela_Inicial','02_Indicadores','03_Instrumentos_de_Gestao','04_Pareceres_CMA','05_Producao_Hospitalar'])
 def test_pages_protected_without_session(page,monkeypatch):

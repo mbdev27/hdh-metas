@@ -87,10 +87,12 @@ def render_sih():
         st.info('Foram recebidos 12 arquivos, com 11 conteúdos únicos. A segunda exportação de mortalidade é idêntica por SHA-256 e não é contada novamente.')
         st.caption('Notas da fonte: dados referentes aos últimos seis meses sujeitos a atualização. “-”, “...” e campos vazios são conservados como símbolos originais, sem conversão automática para zero.')
         byid={m['source_id']:m for m in metadata};chosen=st.selectbox('Arquivo de origem',list(byid),format_func=lambda x:byid[x]['titulo']+' · '+byid[x]['nome_arquivo'],key='sih_source')
-        meta=byid[chosen];st.json(meta)
+        meta=byid[chosen]
+        st.write('**'+meta['titulo']+'**')
+        st.caption('CNES '+meta['cnes']+' · Fonte: Ministério da Saúde — SIH/SUS · Extração: 06/10/2026')
         st.download_button('Baixar CSV original TabNet',(ROOT/meta['arquivo_original']).read_bytes(),meta['nome_arquivo'],mime='text/csv',key='sih_original')
         canonical=meta['duplicate_of'] or chosen;original=data[data.source_id==canonical]
-        st.dataframe(original,hide_index=True,width='stretch')
+        st.dataframe(original[['medida','dimensao','competencia','ano','categoria','valor','valor_original']].rename(columns={'medida':'Medida','dimensao':'Classificação','competencia':'Competência','ano':'Ano','categoria':'Categoria','valor':'Valor','valor_original':'Valor na fonte'}),hide_index=True,width='stretch')
     with st.expander('Exportar a produção hospitalar'):
         st.download_button('CSV — dados mensais do recorte',csv_bytes(selected),'hdh_sih_mensal.csv',key='sih_export_csv')
         sheets={'Mensal':selected,'Anuais publicados':data[(data.tipo_linha=='ano_publicado')&(data.ano>=2020)],'Metadados':pd.DataFrame(metadata).astype(str),'Totais originais':data[data.tipo_linha=='total_publicado']}
