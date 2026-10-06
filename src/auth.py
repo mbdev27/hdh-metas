@@ -5,6 +5,7 @@ def credentials():
     try: auth=dict(st.secrets.get('auth',{}))
     except Exception: auth={}
     username=os.getenv('ADMIN_USERNAME') or auth.get('admin_username')
+    if username=='adm': username='admin'  # Migrate the original account without changing its hash.
     hashed=os.getenv('ADMIN_PASSWORD_HASH') or auth.get('admin_password_hash')
     try:
         if not username or not hashed: return None
@@ -19,11 +20,13 @@ def logout():
     st.rerun()
 def require_login(show_logout=True):
     if st.session_state.get('authenticated'):
+        if st.session_state.get('username')=='adm': st.session_state['username']='admin'
         if time.time()-st.session_state.get('login_time',0)>3600:logout()
         if show_logout and st.sidebar.button('Sair',key='logout'):logout()
         return
     from src.theme import apply_theme,footer
     apply_theme()
+    st.markdown('<style>[data-testid="stSidebar"], [data-testid="stSidebarCollapsedControl"], [data-testid="collapsedControl"] {display:none !important;}</style>',unsafe_allow_html=True)
     left,right=st.columns([1.25,1],gap='large')
     with left:
         st.markdown('<div class="hdh-hero"><div class="hdh-kicker">Saúde · Gestão · Informação</div><h1>HDH Metas</h1><h3>Informação para acompanhar.<br>Clareza para decidir.</h3><p>Um espaço para acompanhar as metas do Hospital Metropolitano Sul Dom Helder Câmara, conhecer os instrumentos de gestão e consultar a trajetória dos resultados assistenciais.</p><span class="hdh-pill">Indicadores</span><span class="hdh-pill">Rastreabilidade</span><span class="hdh-pill">Séries históricas</span></div>',unsafe_allow_html=True)
