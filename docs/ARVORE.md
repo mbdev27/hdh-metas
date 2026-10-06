@@ -1,0 +1,54 @@
+# Árvore completa
+
+```text
+hdh-metas/
+  .github/workflows/tests.yml
+  .gitignore
+  .streamlit/config.toml
+  .streamlit/secrets.toml.example
+  README.md
+  app.py
+  config/contract_documents.yaml
+  config/contract_rules.yaml
+  config/indicators.yaml
+  config/organizational_units.yaml
+  data/mock/producao.csv
+  data/mock/qualidade.csv
+  docs/ARVORE.md
+  docs/AUDITORIA.md
+  docs/PITCH.md
+  docs/VALIDACAO.md
+  pages/01_Visao_Geral.py
+  pages/02_Producao.py
+  pages/03_Qualidade.py
+  pages/04_Consolidacao_Trimestral.py
+  pages/05_Monitoramento.py
+  pages/06_Governanca_Contratual.py
+  pages/07_Gestao_de_Dados.py
+  pytest.ini
+  requirements.txt
+  scripts/audit_documents.py
+  scripts/generate_mock_data.py
+  scripts/generate_password_hash.py
+  src/__init__.py
+  src/auth.py
+  src/calculations.py
+  src/contract_engine.py
+  src/contract_registry.py
+  src/data_loader.py
+  src/data_validation.py
+  src/exports.py
+  src/formatting.py
+  src/indicators.py
+  src/scoring.py
+  src/theme.py
+  src/ui.py
+  src/utils.py
+  tests/test_auth.py
+  tests/test_contract_engine.py
+  tests/test_contract_versions.py
+  tests/test_quality_scoring.py
+  tests/test_quantitative_scoring.py
+  tests/test_ui.py
+  tests/test_validation.py
+```

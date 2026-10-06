@@ -1,0 +1,217 @@
+{
+  "indicators": [
+    {
+      "indicator_id": "Q01",
+      "nome": "Número de Saídas Hospitalares",
+      "grupo": "quantitativo",
+      "campo": "saidas_hospitalares",
+      "formula": "direct",
+      "denominador": null
+    },
+    {
+      "indicator_id": "Q02",
+      "nome": "Atendimentos de Urgência e Emergência",
+      "grupo": "quantitativo",
+      "campo": "urgencia_emergencia",
+      "formula": "direct",
+      "denominador": null
+    },
+    {
+      "indicator_id": "Q03",
+      "nome": "Consultas Médicas Ambulatoriais",
+      "grupo": "quantitativo",
+      "campo": "consultas_medicas",
+      "formula": "direct",
+      "denominador": null
+    },
+    {
+      "indicator_id": "Q04",
+      "nome": "Consultas Multiprofissionais Ambulatoriais",
+      "grupo": "quantitativo",
+      "campo": "consultas_multiprofissionais",
+      "formula": "direct",
+      "denominador": null
+    },
+    {
+      "indicator_id": "Q05",
+      "nome": "Cirurgias Genéricas",
+      "grupo": "quantitativo",
+      "campo": "cirurgias_genericas",
+      "formula": "direct",
+      "denominador": null
+    },
+    {
+      "indicator_id": "Q06",
+      "nome": "Cirurgias Vasculares",
+      "grupo": "quantitativo",
+      "campo": "cirurgias_vasculares",
+      "formula": "direct",
+      "denominador": null
+    },
+    {
+      "indicator_id": "Q07",
+      "nome": "Cirurgias de Traumato-Ortopedia",
+      "grupo": "quantitativo",
+      "campo": "cirurgias_traumato",
+      "formula": "direct",
+      "denominador": null
+    },
+    {
+      "indicator_id": "Q08",
+      "nome": "Artroplastias de Joelho",
+      "grupo": "quantitativo",
+      "campo": "artroplastias_joelho",
+      "formula": "direct",
+      "denominador": null
+    },
+    {
+      "indicator_id": "Q09",
+      "nome": "Cirurgias Cardiológicas",
+      "grupo": "quantitativo",
+      "campo": "cirurgias_cardiologicas",
+      "formula": "direct",
+      "denominador": null
+    },
+    {
+      "indicator_id": "QL01",
+      "nome": "Acolhimento com Classificação de Risco",
+      "grupo": "qualitativo",
+      "campo": "pacientes_classificados",
+      "formula": "ratio",
+      "denominador": "pacientes_urgencia"
+    },
+    {
+      "indicator_id": "QL02",
+      "nome": "Índice de Satisfação do Usuário",
+      "grupo": "qualitativo",
+      "campo": "pesquisas_positivas",
+      "formula": "ratio",
+      "denominador": "pesquisas_respondidas"
+    },
+    {
+      "indicator_id": "QL03",
+      "nome": "Aprovação da Resolução das Queixas",
+      "grupo": "qualitativo",
+      "campo": "queixas_resolvidas",
+      "formula": "ratio",
+      "denominador": "queixas_total"
+    },
+    {
+      "indicator_id": "QL04",
+      "nome": "Glosas por Profissional Não Cadastrado no CNES",
+      "grupo": "qualitativo",
+      "campo": "glosas_cnes_percent",
+      "formula": "direct",
+      "denominador": null
+    },
+    {
+      "indicator_id": "QL05",
+      "nome": "Glosas no SIA/SUS",
+      "grupo": "qualitativo",
+      "campo": "glosas_sia_percent",
+      "formula": "direct",
+      "denominador": null
+    },
+    {
+      "indicator_id": "QL06",
+      "nome": "Glosas no SIH/SUS",
+      "grupo": "qualitativo",
+      "campo": "glosas_sih_percent",
+      "formula": "direct",
+      "denominador": null
+    },
+    {
+      "indicator_id": "QL07",
+      "nome": "Entrega da Prestação de Contas",
+      "grupo": "qualitativo",
+      "campo": "prestacao_contas_data",
+      "formula": "deadline",
+      "denominador": null
+    },
+    {
+      "indicator_id": "QL08",
+      "nome": "Transparência",
+      "grupo": "qualitativo",
+      "campo": "transparencia_nivel",
+      "formula": "category",
+      "denominador": null
+    },
+    {
+      "indicator_id": "QL09",
+      "nome": "Revisão de Óbitos Institucionais",
+      "grupo": "qualitativo",
+      "campo": "obitos_revisados",
+      "formula": "ratio",
+      "denominador": "obitos_total"
+    },
+    {
+      "indicator_id": "QL10",
+      "nome": "Infecção Hospitalar",
+      "grupo": "qualitativo",
+      "campo": "infeccoes_hospitalares",
+      "formula": "ratio",
+      "denominador": "saidas_hospitalares"
+    },
+    {
+      "indicator_id": "QL11",
+      "nome": "Plantões Restritos sem Justificativa Acolhida",
+      "grupo": "qualitativo",
+      "campo": "plantao_restrito_qtd",
+      "formula": "direct",
+      "denominador": null
+    },
+    {
+      "indicator_id": "QL12",
+      "nome": "Execução da Educação Permanente",
+      "grupo": "qualitativo",
+      "campo": "educacao_realizadas",
+      "formula": "ratio",
+      "denominador": "educacao_previstas"
+    },
+    {
+      "indicator_id": "M01",
+      "nome": "Produção SADT",
+      "grupo": "monitoramento",
+      "campo": "sadt_producao",
+      "formula": "direct",
+      "denominador": null,
+      "status_financeiro": "MONITORAMENTO"
+    },
+    {
+      "indicator_id": "M02",
+      "nome": "Produção SAD EMAD",
+      "grupo": "monitoramento",
+      "campo": "sad_emad",
+      "formula": "direct",
+      "denominador": null,
+      "status_financeiro": "MONITORAMENTO"
+    },
+    {
+      "indicator_id": "M03",
+      "nome": "Produção SAD EMAP",
+      "grupo": "monitoramento",
+      "campo": "sad_emap",
+      "formula": "direct",
+      "denominador": null,
+      "status_financeiro": "MONITORAMENTO"
+    },
+    {
+      "indicator_id": "M04",
+      "nome": "Ocupação Operacional Geral",
+      "grupo": "monitoramento",
+      "campo": "ocupacao_geral",
+      "formula": "direct",
+      "denominador": null,
+      "status_financeiro": "MONITORAMENTO"
+    },
+    {
+      "indicator_id": "M05",
+      "nome": "Revisão de Prontuários Vermelho e Amarelo",
+      "grupo": "monitoramento",
+      "campo": "prontuarios_vermelho_amarelo_revisados",
+      "formula": "ratio",
+      "denominador": "prontuarios_vermelho_amarelo_total",
+      "status_financeiro": "PENDENTE DE VALIDAÇÃO DOCUMENTAL"
+    }
+  ]
+}
