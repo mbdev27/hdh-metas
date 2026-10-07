@@ -11,7 +11,7 @@ from src.historical import real_data,aggregate,evidence
 from src.exports import csv_bytes,workbook
 from src.formatting import currency
 
-COLORS={'Atingida':'#24956a','Não atingida':'#d29520','CRÍTICO':'#d35a64','SEM DADOS':'#93a3b4'}
+COLORS={'Atingida':'#24956a','Não atingida':'#d29520','Crítico':'#d35a64','SEM DADOS':'#93a3b4'}
 
 def chart(fig):
     fig.update_layout(font=dict(family='sans-serif',color='#18364e'),paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='#ffffff',margin=dict(l=15,r=15,t=35,b=15),legend_title_text='',hovermode='x unified')
@@ -34,7 +34,7 @@ def source_name(identifier):
 def present_table(frame,columns=None):
     labels={'competencia':'Competência','nome':'Indicador','indicator_id':'Código','indicador':'Código','meta':'Meta','meta_contratual':'Meta contratual','meta_reported':'Meta no parecer','realizado':'Realizado','atingimento':'Alcance (%)','pontuacao':'Pontuação (p.p.)','diferenca':'Diferença','situacao':'Situação','contrato':'Contrato','periodo':'Período','meta_acumulada':'Meta acumulada','meses_presentes':'Meses disponíveis','cobertura':'Cobertura','documentos':'Fontes','valor':'Resultado','resultado_texto':'Resultado informado','meta_aplicada':'Meta aplicada','status_dado':'Situação dos dados','observacao':'Observações','documento_fonte':'Documento','pagina_fonte':'Página','instrumento_meta':'Instrumento da meta','peso':'Peso (p.p.)','inicio_vigencia':'Início','fim_vigencia':'Fim','unidade':'Unidade','secao_fonte':'Seção','tipo_alteracao':'Alteração','status_validacao':'Validação','tipo_documento':'Tipo','numero':'Número','objeto':'Objeto','escopo_alteracao':'Alteração','status':'Situação','observacoes':'Observações','periodo_avaliado':'Período avaliado','valor_mensal':'Valor mensal (R$)','inicio':'Início','fim':'Fim','data_assinatura':'Assinatura'}
     table=frame.copy()
-    if 'situacao' in table:table['situacao']=table.situacao.replace({'META ATINGIDA':'Atingida','ATENÇÃO':'Não atingida','META NÃO ATINGIDA':'Não atingida'})
+    if 'situacao' in table:table['situacao']=table.situacao.replace({'CRÍTICO':'Crítico','META ATINGIDA':'Atingida','ATENÇÃO':'Não atingida','META NÃO ATINGIDA':'Não atingida'})
     if columns is None:columns=[c for c in table.columns if c in labels]
     table=table[[c for c in columns if c in table]].copy()
     docs={d['document_id']:document_label(d) for d in public_documents()}
@@ -123,7 +123,7 @@ def production_view(p,prefix='prod'):
     work,contract,year=filters(p,prefix)
     choices=sorted(work.indicator_id.unique());lookup=work.drop_duplicates('indicator_id').set_index('indicator_id').nome.to_dict()
     chosen=st.selectbox('Indicador assistencial',choices,format_func=lambda x:f'{x} · {lookup[x]}',key=prefix+'_indicator');series=work[work.indicator_id==chosen].sort_values('competencia').copy()
-    series['situacao']=series.situacao.replace({'META ATINGIDA':'Atingida','ATENÇÃO':'Não atingida'})
+    series['situacao']=series.situacao.replace({'CRÍTICO':'Crítico','META ATINGIDA':'Atingida','ATENÇÃO':'Não atingida'})
     selected=st.selectbox('Competência',list(series.competencia),index=len(series)-1,key=prefix+'_month');row=series[series.competencia==selected].iloc[0]
     c=st.columns(4)
     for col,label,value in zip(c,['Meta contratual / referência histórica','Realizado','Alcance da meta pactuada','Pontuação financeira'],[f"{row.meta_contratual:,.0f}".replace(',','.'),'SEM DADOS' if pd.isna(row.realizado) else f"{row.realizado:,.0f}".replace(',','.'),'SEM DADOS' if pd.isna(row.atingimento) else f'{row.atingimento:.2f}%','NÃO AFERÍVEL' if pd.isna(row.pontuacao) else f'{row.pontuacao:.2f} p.p.']):col.metric(label,value)
