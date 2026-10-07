@@ -23,6 +23,8 @@ def show_report(report):
         st.dataframe(report.rename(columns={'linha':'Registro','campo':'Campo','nivel':'Tipo','mensagem':'Descrição','base':'Conjunto'}),hide_index=True,width='stretch')
 
 def render_data():
+    if st.session_state.get("role")!="ADMIN":
+        st.info("A importação de dados está disponível para o administrador.");return
     from src.portal import present_table
     if 'production' not in st.session_state:
         p,q=mocks();p,rp,sp=validate(p,'producao');q,rq,sq=validate(q,'qualidade')
@@ -80,7 +82,7 @@ def render_data():
         st.info('DADOS SIMULADOS / IMPORTADOS NA SESSÃO — não correspondem ao histórico documental CMA.')
         present_table(t)
         st.plotly_chart(px.bar(t[t.grupo!='monitoramento'],x='indicador',y='pontuacao',color='grupo'),width='stretch')
-        st.caption('Pesos máximos: 20 p.p. quantitativos + 10 p.p. qualitativos. Meta física = 100%; faixa máxima de produção a partir de 85%.')
+        st.caption('Pesos máximos: 20 p.p. quantitativos + 10 p.p. qualitativos. Meta = 100%; faixa máxima de produção a partir de 85%.')
         value=ContractEngine().monthly_value(month)
         if value is not None:
             projection=t[t.grupo!='monitoramento'][['indicador','peso','pontuacao']].copy()

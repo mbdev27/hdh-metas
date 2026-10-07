@@ -18,3 +18,19 @@ def test_pages_protected_without_session(page,monkeypatch):
     assert not at.exception
     assert any('Configuração incompleta' in e.value for e in at.error)
     assert not at.dataframe
+
+def test_procedure_groups_all_selected():
+    at=AppTest.from_file(ROOT/'pages/05_Producao_Hospitalar.py',default_timeout=40)
+    for key,value in dict(authenticated=True,username='admin',role='ADMIN',login_time=time.time()).items():at.session_state[key]=value
+    at.run()
+    next(s for s in at.selectbox if s.label=='Classificação da produção').select('Grupo procedimento').run()
+    selection=next(s for s in at.multiselect if s.label=='Categorias para comparar')
+    assert set(selection.value)==set(selection.options)
+    assert not at.error and not at.exception
+
+def test_director_has_no_data_management_tab():
+    at=AppTest.from_file(ROOT/'pages/02_Indicadores.py',default_timeout=40)
+    for key,value in dict(authenticated=True,username='diretoria',role='GESTOR',login_time=time.time()).items():at.session_state[key]=value
+    at.run()
+    assert not at.error and not at.exception
+    assert not any(t.label=='Gestão de dados' for t in at.tabs)

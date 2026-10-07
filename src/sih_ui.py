@@ -5,6 +5,7 @@ import streamlit as st
 from src.sih import load_sih,monthly_series,NON_ADDITIVE,measure_unit
 from src.contract_registry import ROOT
 from src.portal import chart
+from src.theme import sidebar_notice
 from src.exports import csv_bytes,workbook
 
 
@@ -44,6 +45,7 @@ def trend_and_annual(data,selected,measure,dimension='Caráter atendimento',key=
 
 
 def render_sih():
+    sidebar_notice()
     st.title('Produção Hospitalar')
     st.write('Produção registrada no SIH/SUS para o Hospital Dom Helder Câmara — CNES **6559379**.')
     st.markdown('**Fonte:** [DATASUS / TabNet — Ministério da Saúde](https://tabnet.datasus.gov.br/) · **Extração pelo solicitante: 06/10/2026** · **Recorte: janeiro/2020 a julho/2026**.')
@@ -70,7 +72,7 @@ def render_sih():
         dimension=st.selectbox('Classificação da produção',['Caráter atendimento','Grupo procedimento','Subgrupo proced.'],key='sih_dimension')
         series=selected[(selected.medida=='AIH aprovadas')&(selected.dimensao==dimension)&(selected.categoria!='Total')]
         table=series.pivot(index='competencia',columns='categoria',values='valor')
-        cats=sorted(series.categoria.unique());chosen=st.multiselect('Categorias para comparar',cats,default=cats[:min(len(cats),5)],key='sih_categories')
+        cats=sorted(series.categoria.unique());chosen=st.multiselect('Categorias para comparar',cats,default=cats if dimension=='Grupo procedimento' else cats[:min(len(cats),5)],key='sih_categories_'+dimension)
         if chosen:chart(px.line(series[series.categoria.isin(chosen)],x='competencia',y='valor',color='categoria',markers=True,title='AIHs aprovadas por '+dimension.lower(),labels={'valor':'AIHs aprovadas','competencia':'Mês do atendimento'}))
         st.dataframe(table,width='stretch');st.caption('Total excluído da comparação de categorias para evitar dupla contagem. Símbolos sem valor numérico permanecem ausentes. Grupos SIGTAP do SIH não são automaticamente equivalentes às categorias contratuais de cirurgia.')
     with financial:

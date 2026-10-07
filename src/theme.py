@@ -20,8 +20,10 @@ def apply_theme():
     </style>''',unsafe_allow_html=True)
 
 def header():
-    st.caption('HDH METAS  /  MONITORAMENTO CONTRATUAL')
     st.caption('Protótipo demonstrativo para estudo de caso profissional. Sem vínculo oficial com FGH, SES/PE ou Governo de Pernambuco.')
 
 def footer():
     st.markdown('<div class="hdh-footer">HDH Metas · Protótipo demonstrativo para estudo de caso profissional.<br>Dados documentais públicos e agregados. Não inserir dados pessoais identificáveis de pacientes.</div>',unsafe_allow_html=True)
+
+def sidebar_notice():
+    st.sidebar.caption('Painel de apoio à gestão, inspirado em boas práticas de uso de dados em saúde e orientado pelos princípios brasileiros de Saúde Digital. Utiliza dados públicos agregados, sem dados pessoais sensíveis, com cuidados de proteção de dados e respeito à LGPD.')

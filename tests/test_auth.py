@@ -44,3 +44,22 @@ def test_login_hides_sidebar(monkeypatch):
     assert not at.exception
     assert not at.sidebar.button
     assert any('stSidebar' in m.value and 'display:none' in m.value for m in at.markdown)
+
+
+def test_director_login_and_role(monkeypatch):
+    monkeypatch.setenv('ADMIN_USERNAME','admin')
+    monkeypatch.setenv('ADMIN_PASSWORD_HASH',bcrypt.hashpw(b'test-admin',bcrypt.gensalt()).decode())
+    monkeypatch.setenv('DIRECTOR_USERNAME','diretoria')
+    monkeypatch.setenv('DIRECTOR_PASSWORD_HASH',bcrypt.hashpw(b'test-director',bcrypt.gensalt()).decode())
+    at=AppTest.from_file(ROOT/'app.py',default_timeout=40).run()
+    at.text_input[0].set_value('diretoria');at.text_input[1].set_value('test-director');at.button[0].click().run()
+    assert at.session_state['authenticated']
+    assert at.session_state['role']=='GESTOR'
+    assert not at.exception and not at.error
+
+def test_invalid_optional_director_keeps_admin(monkeypatch):
+    from src.auth import accounts
+    monkeypatch.setenv('ADMIN_USERNAME','admin')
+    monkeypatch.setenv('ADMIN_PASSWORD_HASH',bcrypt.hashpw(b'test-admin',bcrypt.gensalt()).decode())
+    monkeypatch.setenv('DIRECTOR_PASSWORD_HASH','invalid')
+    assert [a[0] for a in accounts()]==['admin']

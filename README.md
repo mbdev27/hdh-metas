@@ -23,13 +23,13 @@ Sem configuração válida, o acesso é bloqueado. A senha não fica no GitHub. 
 
 ## O que existe no painel
 
-- **Tela inicial**: apresentação do hospital, especialidades, missão, visão, valores, endereço e contatos, com fontes SES/PE e FGH. Redação própria e indicação da divergência dos CEPs publicados.
-- **Indicadores**: metas físicas, realizado, diferença, atingimento e pontuação quando aferível; séries mensais, trimestre, comparação anual e fundamentação. Aba de qualidade e monitoramento; metas por versão; gestão de uploads e cenário de simulação.
+- **Tela inicial**: apresentação do hospital, especialidades, missão, visão, valores, endereço e contatos, com fontes SES/PE e FGH. Redação própria, identificação CNES e contatos institucionais.
+- **Indicadores**: metas, realizado, diferença, alcance e pontuação quando aferível; séries mensais, trimestre, comparação anual e fundamentação. Aba de qualidade e monitoramento; metas por versão; gestão de uploads e cenário de simulação.
 - **Instrumentos de gestão**: biblioteca com download dos PDFs originais, linha do tempo, mapa de alterações, metas instituídas por documento, inventário, lacunas e condições financeiras.
 - **Produção Hospitalar**: dados SIH/SUS do CNES 6559379, janeiro/2020–julho/2026; AIHs por caráter, grupo e subgrupo, valores aprovados, permanência, óbitos e mortalidade; fonte TabNet e extração em 06/10/2026.
 - **Pareceres CMA**: biblioteca por período, séries por mês e ano, tabelas, evidências e qualidade dos dados.
 
-Login abre a Tela inicial. Todas as páginas são protegidas. Saída limpa a sessão. ADMIN é o único perfil ativo; a arquitetura permite definir futuramente GESTOR e LEITURA. Cinco tentativas inválidas geram bloqueio de 30 segundos por sessão; sessão expira em uma hora. A proteção por sessão é básica: uso institucional necessita identidade e controles apropriados.
+Login abre a Tela inicial. Todas as páginas são protegidas. Saída limpa a sessão. ADMIN administra os dados; GESTOR consulta e exporta resultados. O acesso GESTOR da diretoria é habilitado por Secrets; LEITURA permanece previsto para evolução. Cinco tentativas inválidas geram bloqueio de 30 segundos por sessão; sessão expira em uma hora. A proteção por sessão é básica: uso institucional necessita identidade e controles apropriados.
 
 ## Instalação local do zero — Windows
 
@@ -133,3 +133,7 @@ Originais: `data/sih/originais/`; observações normalizadas: `data/sih/observac
 A interface utiliza resumos e tabelas gerenciais, sem blocos JSON, hashes ou estruturas internas. A fundamentação legal é referência interna e não aparece na biblioteca. PDFs são oferecidos para download, preservando sua apresentação original. Erros técnicos ficam nos logs do servidor; mensagens do painel não mostram código nem traceback.
 
 O usuário administrativo é `admin`. Configurações antigas com o nome `adm` são migradas automaticamente para `admin`, preservando o hash e a senha; o nome antigo não é aceito no login. A navegação lateral só fica visível após autenticação.
+
+### Acesso da diretoria
+
+O administrador continua usando `admin`. Para habilitar um segundo acesso com perfil GESTOR, gere outro hash com `python scripts/generate_password_hash.py`. No Streamlit Cloud, abra Settings → Secrets e acrescente `director_username = "diretoria"` e `director_password_hash = "HASH_GERADO"` ao bloco `[auth]` existente, preservando as chaves do administrador. Não crie outro bloco `[auth]`. O perfil GESTOR consulta painéis e documentos e exporta resultados; a gestão de dados permanece restrita ao ADMIN. Alternativamente, configure `DIRECTOR_USERNAME` e `DIRECTOR_PASSWORD_HASH` no ambiente. Sem essas chaves, apenas o administrador permanece habilitado.

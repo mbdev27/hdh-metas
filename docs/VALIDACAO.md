@@ -13,3 +13,5 @@ GitHub Actions confirmou pytest e compileall em Python 3.12 e 3.13 na integraç�
 Polimento: biblioteca sem fundamentação legal, sem exposição de metadados técnicos ou datas ausentes; PDFs somente para download. Navegação lateral habilitada. Tratamento de falhas com mensagem pública genérica e logs internos.
 
 Autenticação: cinco testes passaram após ajuste do usuário para admin, incluindo login, logout, bloqueio de tentativas, migração de configuração antiga sem alterar senha e ocultação da barra lateral no login.
+
+Ajustes finais: **64 testes passaram** na suíte completa local, incluindo acesso diretoria/GESTOR, preservação do administrador quando a configuração opcional é inválida, contatos e resumo da Tela inicial, seleção de todos os grupos de procedimentos e restrição da gestão de dados ao ADMIN. Compileall aprovado; Streamlit iniciou na porta 8503 com configuração headless.
