@@ -1,0 +1,182 @@
+references:
+- reference_id: RDC63
+  title: Requisitos de boas práticas de funcionamento dos serviços de saúde
+  organ: Anvisa
+  number: 63
+  year: 2011
+  relevant_device: Arts. 5–8, 10, 17–18, 23, 32, 34, 51 e 62
+  official_url: https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2011/rdc0063_25_11_2011.html
+  consulted_on: '2026-10-07'
+  original_text_consulted: true
+  verification_status: Pendente de conferência
+  verification_note: Texto/base oficial consultado; confirmar vigência consolidada,
+    alterações posteriores e aplicação ao serviço.
+  formula_prescription: Fórmula operacional proposta; não apresentada como prescrição
+    literal da norma.
+- reference_id: RDC36
+  title: Ações para segurança do paciente em serviços de saúde
+  organ: Anvisa
+  number: 36
+  year: 2013
+  relevant_device: Arts. 7, 8, 9 e 10
+  official_url: https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2013/rdc0036_25_07_2013.html
+  consulted_on: '2026-10-07'
+  original_text_consulted: true
+  verification_status: Pendente de conferência
+  verification_note: Texto/base oficial consultado; confirmar vigência consolidada,
+    alterações posteriores e aplicação ao serviço.
+  formula_prescription: Fórmula operacional proposta; não apresentada como prescrição
+    literal da norma.
+- reference_id: RDC7
+  title: Requisitos mínimos para funcionamento de unidades de terapia intensiva
+  organ: Anvisa
+  number: 7
+  year: 2010
+  relevant_device: Requisitos de estrutura, pessoal, processos, segurança e indicadores
+  official_url: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000007&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2010
+  consulted_on: '2026-10-07'
+  original_text_consulted: true
+  verification_status: Pendente de conferência
+  verification_note: Texto/base oficial consultado; confirmar vigência consolidada,
+    alterações posteriores e aplicação ao serviço.
+  formula_prescription: Fórmula operacional proposta; não apresentada como prescrição
+    literal da norma.
+- reference_id: RDC26
+  title: Altera a RDC 7/2010
+  organ: Anvisa
+  number: 26
+  year: 2012
+  relevant_device: Alterações no dimensionamento de enfermagem
+  official_url: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000026&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2012
+  consulted_on: '2026-10-07'
+  original_text_consulted: false
+  verification_status: Pendente de conferência
+  verification_note: Referência/alteração identificada; consulta integral e consolidação
+    ainda necessárias.
+  formula_prescription: Fórmula operacional proposta; não apresentada como prescrição
+    literal da norma.
+- reference_id: RDC137
+  title: Altera a RDC 7/2010
+  organ: Anvisa
+  number: 137
+  year: 2017
+  relevant_device: Alterações na responsabilidade técnica e coordenação
+  official_url: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000137&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2017
+  consulted_on: '2026-10-07'
+  original_text_consulted: false
+  verification_status: Pendente de conferência
+  verification_note: Referência/alteração identificada; consulta integral e consolidação
+    ainda necessárias.
+  formula_prescription: Fórmula operacional proposta; não apresentada como prescrição
+    literal da norma.
+- reference_id: RDC50
+  title: Projetos físicos de estabelecimentos assistenciais de saúde
+  organ: Anvisa
+  number: 50
+  year: 2002
+  relevant_device: Regulamento técnico conforme área e serviço; considerar alterações
+  official_url: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000050&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2002
+  consulted_on: '2026-10-07'
+  original_text_consulted: false
+  verification_status: Pendente de conferência
+  verification_note: Referência/alteração identificada; consulta integral e consolidação
+    ainda necessárias.
+  formula_prescription: Fórmula operacional proposta; não apresentada como prescrição
+    literal da norma.
+- reference_id: RDC51
+  title: Análise, avaliação e aprovação de projetos físicos de estabelecimentos de
+    saúde
+  organ: Anvisa
+  number: 51
+  year: 2011
+  relevant_device: Projeto, reforma e ampliação; alteração parcial da RDC 50/2002
+  official_url: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000051&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2011
+  consulted_on: '2026-10-07'
+  original_text_consulted: true
+  verification_status: Pendente de conferência
+  verification_note: Texto/base oficial consultado; confirmar vigência consolidada,
+    alterações posteriores e aplicação ao serviço.
+  formula_prescription: Fórmula operacional proposta; não apresentada como prescrição
+    literal da norma.
+- reference_id: RDC509
+  title: Gerenciamento de tecnologias em saúde em estabelecimentos de saúde
+  organ: Anvisa
+  number: 509
+  year: 2021
+  relevant_device: Arts. 4–8, 17–19 e 21
+  official_url: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000509&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2021
+  consulted_on: '2026-10-07'
+  original_text_consulted: true
+  verification_status: Pendente de conferência
+  verification_note: Texto/base oficial consultado; confirmar vigência consolidada,
+    alterações posteriores e aplicação ao serviço.
+  formula_prescription: Fórmula operacional proposta; não apresentada como prescrição
+    literal da norma.
+- reference_id: RDC15
+  title: Boas práticas para processamento de produtos para saúde
+  organ: Anvisa
+  number: 15
+  year: 2012
+  relevant_device: Requisitos aplicáveis ao serviço de processamento
+  official_url: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000015&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2012
+  consulted_on: '2026-10-07'
+  original_text_consulted: false
+  verification_status: Pendente de conferência
+  verification_note: Referência/alteração identificada; consulta integral e consolidação
+    ainda necessárias.
+  formula_prescription: Fórmula operacional proposta; não apresentada como prescrição
+    literal da norma.
+- reference_id: RDC222
+  title: Boas práticas de gerenciamento dos resíduos de serviços de saúde
+  organ: Anvisa
+  number: 222
+  year: 2018
+  relevant_device: Plano e requisitos de gerenciamento de resíduos
+  official_url: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000222&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2018
+  consulted_on: '2026-10-07'
+  original_text_consulted: false
+  verification_status: Pendente de conferência
+  verification_note: Referência/alteração identificada; consulta integral e consolidação
+    ainda necessárias.
+  formula_prescription: Fórmula operacional proposta; não apresentada como prescrição
+    literal da norma.
+- reference_id: CIRURGIA
+  title: Protocolo para cirurgia segura
+  organ: Ministério da Saúde / Anvisa / Fiocruz
+  number: null
+  year: 2013
+  relevant_device: Lista de verificação e os três momentos de segurança
+  official_url: https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/publicacoes/protocolo-de-cirurgia-segura
+  consulted_on: '2026-10-07'
+  original_text_consulted: true
+  verification_status: Pendente de conferência
+  verification_note: Texto/base oficial consultado; confirmar vigência consolidada,
+    alterações posteriores e aplicação ao serviço.
+  formula_prescription: Fórmula operacional proposta; não apresentada como prescrição
+    literal da norma.
+- reference_id: LOCAL
+  title: Regras sanitárias locais, Corpo de Bombeiros e conselho profissional
+  organ: Autoridade competente — a identificar
+  number: null
+  year: null
+  relevant_device: A identificar na matriz de aplicabilidade
+  official_url: null
+  consulted_on: null
+  original_text_consulted: false
+  verification_status: Pendente de conferência
+  verification_note: Não cadastrado como requisito validado. Identificar instrumentos
+    locais aplicáveis.
+  formula_prescription: Proposta operacional.
+- reference_id: OUTRAS
+  title: Normas específicas dos serviços e de outras autoridades, inclusive trabalho
+  organ: Autoridade competente — a identificar
+  number: null
+  year: null
+  relevant_device: A identificar na matriz de aplicabilidade
+  official_url: null
+  consulted_on: null
+  original_text_consulted: false
+  verification_status: Pendente de conferência
+  verification_note: Não cadastrado como requisito validado. Identificar instrumentos
+    locais aplicáveis.
+  formula_prescription: Proposta operacional.

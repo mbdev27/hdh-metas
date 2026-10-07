@@ -27,6 +27,7 @@ Sem configuração válida, o acesso é bloqueado. A senha não fica no GitHub. 
 - **Indicadores**: metas, realizado, diferença, alcance e pontuação quando aferível; séries mensais, trimestre, comparação anual e fundamentação. Resumo gerencial com maiores desvios, pendências e acesso direto aos indicadores; gráficos de qualidade e monitoramento, metas por versão e gestão de uploads.
 - **Instrumentos de gestão**: biblioteca com download dos PDFs originais, linha do tempo, mapa de alterações, metas instituídas por documento, inventário, lacunas e condições financeiras.
 - **Produção Hospitalar**: dados SIH/SUS do CNES 6559379, janeiro/2020–julho/2026; AIHs por caráter, grupo e subgrupo, valores aprovados, permanência, óbitos e mortalidade; fonte TabNet e extração em 06/10/2026.
+- **Indicadores de reestruturação**: 14 fichas propostas, baseline pendente, pactuação versionada, memória de cálculo, ações e gráficos por escopo. Demonstração fictícia isolada; registros institucionais em JSON, com backup e restauração pelo ADMIN. Consulte [configuração e regras](docs/REESTRUTURACAO.md).
 - **Pareceres CMA**: biblioteca por período, séries por mês e ano, tabelas, evidências e qualidade dos dados.
 
 Login abre a Tela inicial. Todas as páginas são protegidas. Saída limpa a sessão. ADMIN administra os dados; GESTOR consulta e exporta resultados. O acesso GESTOR da diretoria é habilitado por Secrets; LEITURA permanece previsto para evolução. Cinco tentativas inválidas geram bloqueio de 30 segundos por sessão; sessão expira em uma hora. A proteção por sessão é básica: uso institucional necessita identidade e controles apropriados.
@@ -155,3 +156,11 @@ Os gráficos quantitativos distinguem a meta de 100% e a faixa financeira máxim
 `requirements.txt` fixa as dependências diretas e usa `requirements-lock.txt` para fixar as dependências transitivas. Instale normalmente com `pip install -r requirements.txt`. Atualizações de versões devem ser deliberadas, com revisão do arquivo de restrições e testes em Python 3.12 e 3.13. Não substitua as versões por intervalos antes de validar a implantação.
 
 Os testes adicionais verificam troca de seções e filtros, navegação do resumo ao indicador, mudança de página/ano dos PDFs, competências de transição, invalidação do cache e o fluxo de leitura, mapeamento, prévia, confirmação e consolidação da importação. Como AppTest não automatiza o seletor nativo de arquivos do navegador, o teste fornece um arquivo agregado ao ponto de upload e exercita o restante da interface.
+
+## Nova página de reestruturação — versão sem SQL
+
+A página de reestruturação integra esta versão do projeto. [Manual completo](docs/REESTRUTURACAO.md): fluxos, limites, indicadores, persistência sem SQL em JSON, backup e restauração. ADMIN registra a evidência documental da pactuação; diretoria/GESTOR consulta e exporta. Não é necessário configurar banco. O ADMIN inicializa as fichas propostas para começar a registrar; no Streamlit Cloud, baixe backups porque arquivos do servidor podem desaparecer após reinicializações.
+
+## Histórico de acessos
+
+A nova página **Administração** é exclusiva do login `admin`, com controle de acesso no código. Registra logins confirmados, saídas e expirações detectadas, sem senha ou IP. Consulte o [manual](docs/HISTORICO_DE_ACESSO.md) para filtros, exportações e limites do armazenamento JSON no Streamlit Cloud. O histórico começa nesta atualização e não é incluído no backup da reestruturação.

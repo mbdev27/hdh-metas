@@ -30,13 +30,16 @@ def accounts():
 def verify(username,password,expected,hashed):
     try:return hmac.compare_digest(username,expected) and bcrypt.checkpw(password.encode(),hashed.encode())
     except (ValueError,TypeError):return False
-def logout():
+def logout(event='LOGOUT'):
+    from src.access_history import log_session_event
+    if st.session_state.get('authenticated'):log_session_event(event)
     st.session_state.clear()
     st.rerun()
 def require_login(show_logout=True):
     if st.session_state.get('authenticated'):
         if st.session_state.get('username')=='adm': st.session_state['username']='admin'
-        if time.time()-st.session_state.get('login_time',0)>3600:logout()
+        if time.time()-st.session_state.get('login_time',0)>3600:logout('SESSION_EXPIRED')
+        if st.session_state.pop('access_history_notice',False):st.warning('O acesso foi permitido, mas houve uma falha ao registrar o histórico. Informe ao administrador.')
         if show_logout and st.sidebar.button('Sair',key='logout'):logout()
         return
     from src.theme import apply_theme,footer
@@ -60,7 +63,10 @@ def require_login(show_logout=True):
     if submit:
         role=next((role for name,hashed,role in configured if verify(user,password,name,hashed)),None)
         if role:
-            st.session_state.update(authenticated=True,username=user,role=role,login_time=time.time());st.session_state.pop('failures',None);st.rerun()
+            st.session_state.update(authenticated=True,username=user,role=role,login_time=time.time())
+            from src.access_history import log_session_event
+            log_session_event('LOGIN')
+            st.session_state.pop('failures',None);st.rerun()
         else:
             failures=st.session_state.get('failures',0)+1;st.session_state['failures']=failures
             if failures>=5:st.session_state.update(blocked_until=time.time()+30,failures=0)

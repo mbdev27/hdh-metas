@@ -1,0 +1,753 @@
+notice: '**Indicadores propostos para o estudo de caso.** Este painel apresenta indicadores
+  sugeridos com base em requisitos e boas práticas descritos em instrumentos normativos
+  oficiais aplicáveis. As fórmulas operacionais, metas, prazos e regras de acompanhamento
+  constituem propostas de gestão e devem ser avaliados e pactuados com a diretoria
+  e os responsáveis técnicos da unidade. Os indicadores podem ser repactuados mediante
+  registro e aprovação. Metas intermediárias não autorizam descumprimento legal ou
+  manutenção de condições inseguras.'
+disclaimer: Os dados utilizados na demonstração, quando fictícios, não representam
+  resultados atuais do hospital. A ferramenta não é apresentada como produto oficial
+  ou homologado pela Fundação de Gestão Hospitalar Martiniano Fernandes.
+indicators:
+- indicator_id: R01
+  number: 1
+  name: Percentual de documentos obrigatórios válidos
+  purpose: Regularização documental
+  action: Regularização documental
+  unit: '%'
+  improvement: aumentar
+  formula: documentos obrigatórios aplicáveis válidos e verificáveis na data de corte
+    ÷ total de documentos obrigatórios aplicáveis no inventário aprovado × 100.
+  numerator_definition: documentos obrigatórios aplicáveis válidos e verificáveis
+    na data de corte
+  denominator_definition: total de documentos obrigatórios aplicáveis no inventário
+    aprovado
+  eligibility_rules:
+  - Documento protocolado não equivale a documento concedido.
+  - Documento vencido, ausente ou com escopo insuficiente não entra no numerador.
+  - Exclusão por não aplicabilidade exige justificativa e validação.
+  - Separar as trilhas sanitária, Corpo de Bombeiros e conselho profissional.
+  - Não prometer prazo de emissão que dependa de órgão externo.
+  conclusion_criteria: Cumprimento comprovado das etapas descritas, com evidência
+    e validação técnica.
+  source: inventário documental, documentos e consulta ao emissor.
+  collection_method: Inventário e registros verificáveis
+  frequency: semanal durante a regularização e mensal após sua conclusão.
+  collector: Área responsável — a pactuar
+  validator: Responsável técnico/Qualidade — a pactuar
+  baseline:
+    value: null
+    period: null
+    coverage: null
+    evidence: null
+    status: A levantar no diagnóstico inicial
+  target: 100
+  target_description: 100%.
+  milestone_days: null
+  pact_status: Proposta — aguardando pactuação
+  approved_plan_start: null
+  approval: null
+  effective_from: '1900-01-01'
+  scope: A pactuar
+  resources: A pactuar
+  comparability_break: false
+  formula_code: restructuring_v1
+  normative_refs:
+  - RDC63
+  - LOCAL
+  normative_basis: Resolução da Diretoria Colegiada 63/2011 e regras locais aplicáveis.
+    As regularidades perante o Corpo de Bombeiros e os conselhos profissionais seguem
+    instrumentos próprios.
+  deviation_response: Verificar validade, escopo e emissor; tratar pendências com
+    o responsável técnico.
+  record_type: documento
+  version: 1
+- indicator_id: R02
+  number: 2
+  name: Percentual de requisitos sanitários conformes
+  purpose: Adequação sanitária
+  action: Adequação sanitária
+  unit: '%'
+  improvement: aumentar
+  formula: requisitos aplicáveis com conformidade comprovada ÷ total de requisitos
+    aplicáveis inventariados na versão vigente da matriz × 100.
+  numerator_definition: requisitos aplicáveis com conformidade comprovada
+  denominator_definition: total de requisitos aplicáveis inventariados na versão vigente
+    da matriz
+  eligibility_rules:
+  - Requisitos não avaliados permanecem no denominador como conformidade não demonstrada,
+    mas devem aparecer separados das não conformidades comprovadas.
+  - Requisitos não aplicáveis são excluídos somente com justificativa validada.
+  - Mostrar cobertura da avaliação.
+  - Destacar falhas críticas, mesmo quando o resultado agregado for alto.
+  conclusion_criteria: Cumprimento comprovado das etapas descritas, com evidência
+    e validação técnica.
+  source: matriz de requisitos, evidências e avaliações técnicas.
+  collection_method: Inventário e registros verificáveis
+  frequency: mensal, com atualização após correções relevantes.
+  collector: Área responsável — a pactuar
+  validator: Responsável técnico/Qualidade — a pactuar
+  baseline:
+    value: null
+    period: null
+    coverage: null
+    evidence: null
+    status: A levantar no diagnóstico inicial
+  target: 100
+  target_description: objetivo de 100%, com avaliação completa.
+  milestone_days: null
+  pact_status: Proposta — aguardando pactuação
+  approved_plan_start: null
+  approval: null
+  effective_from: '1900-01-01'
+  scope: A pactuar
+  resources: A pactuar
+  comparability_break: false
+  formula_code: restructuring_v1
+  normative_refs:
+  - RDC63
+  - RDC7
+  - RDC50
+  - RDC51
+  - RDC509
+  - RDC15
+  - RDC222
+  - OUTRAS
+  normative_basis: Resolução 63/2011 e normas específicas dos serviços avaliados,
+    incluindo terapia intensiva, estrutura física, tecnologias, processamento de produtos
+    e resíduos. Identificar separadamente normas do Ministério do Trabalho e outras
+    autoridades.
+  deviation_response: Priorizar requisitos não avaliados e falhas críticas; registrar
+    ação e reavaliação.
+  record_type: requisito
+  version: 1
+- indicator_id: R03
+  number: 3
+  name: Percentual de cirurgias com registro completo dos três momentos de segurança
+  purpose: Documentação de cirurgia segura
+  action: Documentação de cirurgia segura
+  unit: '%'
+  improvement: aumentar
+  formula: cirurgias elegíveis com registro completo e tempestivo dos três momentos
+    ÷ total de cirurgias elegíveis realizadas no período × 100.
+  numerator_definition: cirurgias elegíveis com registro completo e tempestivo dos
+    três momentos
+  denominator_definition: total de cirurgias elegíveis realizadas no período
+  eligibility_rules:
+  - Lista não localizada não permite excluir a cirurgia do denominador.
+  - Campos não aplicáveis exigem justificativa.
+  - Preenchimento retrospectivo não comprova registro tempestivo.
+  - Este indicador acompanha documentação. Não comprova, sozinho, a execução efetiva
+    dos momentos.
+  conclusion_criteria: Cumprimento comprovado das etapas descritas, com evidência
+    e validação técnica.
+  source: mapa cirúrgico, prontuário e lista de verificação.
+  collection_method: Inventário e registros verificáveis
+  frequency: semanal na implantação e mensal na rotina.
+  collector: Área responsável — a pactuar
+  validator: Responsável técnico/Qualidade — a pactuar
+  baseline:
+    value: null
+    period: null
+    coverage: null
+    evidence: null
+    status: A levantar no diagnóstico inicial
+  target: 100
+  target_description: 100%.
+  milestone_days: null
+  pact_status: Proposta — aguardando pactuação
+  approved_plan_start: null
+  approval: null
+  effective_from: '1900-01-01'
+  scope: A pactuar
+  resources: A pactuar
+  comparability_break: false
+  formula_code: restructuring_v1
+  normative_refs:
+  - RDC63
+  - RDC36
+  - CIRURGIA
+  normative_basis: Resoluções 63/2011 e 36/2013 e Protocolo de Cirurgia Segura.
+  deviation_response: Corrigir fluxo e registro tempestivo; capacitar equipe e auditar
+    os três momentos.
+  record_type: cirurgia
+  version: 1
+- indicator_id: R04
+  number: 4
+  name: Percentual de cirurgias observadas com execução correta dos três momentos
+    de segurança
+  purpose: Execução da cirurgia segura
+  action: Execução da cirurgia segura
+  unit: '%'
+  improvement: aumentar
+  formula: cirurgias observadas com os três momentos corretamente executados ÷ total
+    de cirurgias elegíveis observadas integralmente × 100.
+  numerator_definition: cirurgias observadas com os três momentos corretamente executados
+  denominator_definition: total de cirurgias elegíveis observadas integralmente
+  eligibility_rules:
+  - Observar antes da indução anestésica, antes da incisão e antes da saída da sala.
+  - Conferir momento, participação da equipe e verificações aplicáveis.
+  - Observações parciais devem aparecer como perdas, separadas do cálculo principal.
+  - Mostrar tamanho da amostra, turnos e especialidades.
+  - Uma cirurgia com falha em qualquer momento não entra no numerador.
+  - Falhas críticas exigem resposta imediata.
+  - Não tratar uma amostra operacional como estimativa estatística universal.
+  conclusion_criteria: Cumprimento comprovado das etapas descritas, com evidência
+    e validação técnica.
+  source: observação direta por avaliador treinado.
+  collection_method: Observação integral por avaliador treinado; informar amostra
+    e perdas
+  frequency: observação semanal e consolidação mensal.
+  collector: Área responsável — a pactuar
+  validator: Responsável técnico/Qualidade — a pactuar
+  baseline:
+    value: null
+    period: null
+    coverage: null
+    evidence: null
+    status: A levantar no diagnóstico inicial
+  target: 95
+  target_description: pelo menos 95% até o 60º dia, com objetivo de 100%.
+  milestone_days: 60
+  pact_status: Proposta — aguardando pactuação
+  approved_plan_start: null
+  approval: null
+  effective_from: '1900-01-01'
+  scope: A pactuar
+  resources: A pactuar
+  comparability_break: false
+  formula_code: restructuring_v1
+  normative_refs:
+  - RDC63
+  - RDC36
+  - CIRURGIA
+  normative_basis: Resoluções 63/2011 e 36/2013 e Protocolo de Cirurgia Segura.
+  deviation_response: Intervir imediatamente em falha crítica; avaliar equipes e perdas
+    observacionais.
+  record_type: observacao
+  version: 1
+- indicator_id: R05
+  number: 5
+  name: Percentual de auditorias programadas concluídas
+  purpose: Auditorias estruturadas
+  action: Auditorias estruturadas
+  unit: '%'
+  improvement: aumentar
+  formula: auditorias programadas concluídas com relatório válido no período ÷ total
+    de auditorias previstas para o período × 100.
+  numerator_definition: auditorias programadas concluídas com relatório válido no
+    período
+  denominator_definition: total de auditorias previstas para o período
+  eligibility_rules:
+  - Relatório deve conter escopo, critérios, evidências, achados e encaminhamentos.
+  - Visita informal não equivale automaticamente a auditoria concluída.
+  - Auditorias extras são apresentadas separadamente.
+  - Preservar calendário original e registrar alterações justificadas.
+  conclusion_criteria: Cumprimento comprovado das etapas descritas, com evidência
+    e validação técnica.
+  source: calendário aprovado e relatórios.
+  collection_method: Inventário e registros verificáveis
+  frequency: mensal.
+  collector: Área responsável — a pactuar
+  validator: Responsável técnico/Qualidade — a pactuar
+  baseline:
+    value: null
+    period: null
+    coverage: null
+    evidence: null
+    status: A levantar no diagnóstico inicial
+  target: 100
+  target_description: 100%.
+  milestone_days: null
+  pact_status: Proposta — aguardando pactuação
+  approved_plan_start: null
+  approval: null
+  effective_from: '1900-01-01'
+  scope: A pactuar
+  resources: A pactuar
+  comparability_break: false
+  formula_code: restructuring_v1
+  normative_refs:
+  - RDC63
+  - RDC36
+  normative_basis: Resoluções 63/2011 e 36/2013, como suporte à garantia da qualidade
+    e ao acompanhamento das adequações. A periodicidade do calendário é proposta de
+    gestão.
+  deviation_response: Reprogramar justificadamente sem apagar o calendário original;
+    concluir relatório.
+  record_type: auditoria
+  version: 1
+- indicator_id: R06
+  number: 6
+  name: Percentual de não conformidades encerradas no prazo e com eficácia comprovada
+  purpose: Tratamento de não conformidades
+  action: Tratamento de não conformidades
+  unit: '%'
+  improvement: aumentar
+  formula: não conformidades com prazo original vencendo no período, encerradas e
+    validadas até esse prazo ÷ total de não conformidades com prazo original vencendo
+    no período × 100.
+  numerator_definition: não conformidades com prazo original vencendo no período,
+    encerradas e validadas até esse prazo
+  denominator_definition: total de não conformidades com prazo original vencendo no
+    período
+  eligibility_rules:
+  - Execução de uma tarefa não equivale a eficácia comprovada.
+  - Conclusão tardia não conta como conclusão no prazo.
+  - Alterar o prazo não apaga o prazo original.
+  - Mostrar também pendências vencidas, tempo de atraso e riscos críticos.
+  conclusion_criteria: Cumprimento comprovado das etapas descritas, com evidência
+    e validação técnica.
+  source: registro de não conformidades, plano corretivo e reauditoria.
+  collection_method: Inventário e registros verificáveis
+  frequency: semanal para riscos críticos e mensal para consolidação.
+  collector: Área responsável — a pactuar
+  validator: Responsável técnico/Qualidade — a pactuar
+  baseline:
+    value: null
+    period: null
+    coverage: null
+    evidence: null
+    status: A levantar no diagnóstico inicial
+  target: 90
+  target_description: alcançar pelo menos 90% até o 90º dia do plano.
+  milestone_days: 90
+  pact_status: Proposta — aguardando pactuação
+  approved_plan_start: null
+  approval: null
+  effective_from: '1900-01-01'
+  scope: A pactuar
+  resources: A pactuar
+  comparability_break: false
+  formula_code: restructuring_v1
+  normative_refs:
+  - RDC63
+  - RDC36
+  normative_basis: Resoluções 63/2011 e 36/2013.
+  deviation_response: Tratar atrasos e validar eficácia; prazo original permanece
+    visível.
+  record_type: nao_conformidade
+  version: 1
+- indicator_id: R07
+  number: 7
+  name: Percentual de reincidência de não conformidades
+  purpose: Sustentação das melhorias
+  action: Sustentação das melhorias
+  unit: '%'
+  improvement: reduzir
+  formula: não conformidades encerradas e reavaliadas que reapareceram no mesmo requisito
+    e setor durante a janela de 90 dias ÷ total de não conformidades encerradas reavaliadas
+    após completar essa janela × 100.
+  numerator_definition: não conformidades encerradas e reavaliadas que reapareceram
+    no mesmo requisito e setor durante a janela de 90 dias
+  denominator_definition: total de não conformidades encerradas reavaliadas após completar
+    essa janela
+  eligibility_rules:
+  - Casos sem janela completa não entram no cálculo principal.
+  - Mostrar cobertura da reavaliação entre os casos com janela completa.
+  - Não selecionar somente os melhores casos.
+  - Uma falha ainda aberta não constitui nova reincidência de um encerramento.
+  - Reincidência crítica exige análise e intervenção imediatas.
+  conclusion_criteria: Cumprimento comprovado das etapas descritas, com evidência
+    e validação técnica.
+  source: histórico de achados, encerramentos e reauditorias.
+  collection_method: Inventário e registros verificáveis
+  frequency: mensal, após amadurecimento das janelas.
+  collector: Área responsável — a pactuar
+  validator: Responsável técnico/Qualidade — a pactuar
+  baseline:
+    value: null
+    period: null
+    coverage: null
+    evidence: null
+    status: A levantar no diagnóstico inicial
+  target: 10
+  target_description: no máximo 10% até o 180º dia, com objetivo de ausência de reincidência
+    crítica.
+  milestone_days: 180
+  pact_status: Proposta — aguardando pactuação
+  approved_plan_start: null
+  approval: null
+  effective_from: '1900-01-01'
+  scope: A pactuar
+  resources: A pactuar
+  comparability_break: false
+  formula_code: restructuring_v1
+  normative_refs:
+  - RDC63
+  - RDC36
+  normative_basis: Resoluções 63/2011 e 36/2013.
+  deviation_response: Investigar causas da reincidência e validar novas barreiras;
+    crítica requer ação imediata.
+  record_type: reincidencia
+  version: 1
+- indicator_id: R08
+  number: 8
+  name: Percentual de protocolos prioritários efetivamente implantados
+  purpose: Implantação de protocolos
+  action: Implantação de protocolos
+  unit: '%'
+  improvement: aumentar
+  formula: protocolos prioritários com aprovação, recursos, capacitação e uso demonstrados
+    ÷ total de protocolos prioritários pactuados × 100.
+  numerator_definition: protocolos prioritários com aprovação, recursos, capacitação
+    e uso demonstrados
+  denominator_definition: total de protocolos prioritários pactuados
+  eligibility_rules:
+  - Documento aprovado sozinho não comprova implantação.
+  - Preservar versões da lista de prioridades.
+  - Mostrar etapas pendentes de cada protocolo.
+  conclusion_criteria: Cumprimento comprovado das etapas descritas, com evidência
+    e validação técnica.
+  source: lista de protocolos, documentos, registros de formação e verificação em
+    campo.
+  collection_method: Inventário e registros verificáveis
+  frequency: mensal.
+  collector: Área responsável — a pactuar
+  validator: Responsável técnico/Qualidade — a pactuar
+  baseline:
+    value: null
+    period: null
+    coverage: null
+    evidence: null
+    status: A levantar no diagnóstico inicial
+  target: 100
+  target_description: 100% até o 90º dia. Cirurgia segura começa imediatamente.
+  milestone_days: 90
+  pact_status: Proposta — aguardando pactuação
+  approved_plan_start: null
+  approval: null
+  effective_from: '1900-01-01'
+  scope: A pactuar
+  resources: A pactuar
+  comparability_break: false
+  formula_code: restructuring_v1
+  normative_refs:
+  - RDC63
+  - RDC36
+  - CIRURGIA
+  normative_basis: Resoluções 63/2011 e 36/2013 e protocolos aplicáveis.
+  deviation_response: Completar recursos, capacitação e verificação de uso; cirurgia
+    segura começa imediatamente.
+  record_type: protocolo
+  version: 1
+- indicator_id: R09
+  number: 9
+  name: Percentual de adesão às etapas de cada protocolo
+  purpose: Adesão aos protocolos
+  action: Adesão aos protocolos
+  unit: '%'
+  improvement: aumentar
+  formula: oportunidades observadas com todas as etapas aplicáveis corretamente executadas
+    ÷ total de oportunidades elegíveis observadas integralmente × 100, separadamente
+    por protocolo.
+  numerator_definition: oportunidades observadas com todas as etapas aplicáveis corretamente
+    executadas
+  denominator_definition: total de oportunidades elegíveis observadas integralmente
+  eligibility_rules:
+  - Definir o significado de “oportunidade” para cada protocolo.
+  - Não somar protocolos diferentes em uma taxa única.
+  - Registrar amostra, cobertura e perdas.
+  - Manter indicadores específicos previstos nos protocolos.
+  conclusion_criteria: Cumprimento comprovado das etapas descritas, com evidência
+    e validação técnica.
+  source: observação ou auditoria de registros, conforme a ficha específica.
+  collection_method: Observação integral por avaliador treinado; informar amostra
+    e perdas
+  frequency: semanal na implantação e mensal por protocolo.
+  collector: Área responsável — a pactuar
+  validator: Responsável técnico/Qualidade — a pactuar
+  baseline:
+    value: null
+    period: null
+    coverage: null
+    evidence: null
+    status: A levantar no diagnóstico inicial
+  target: 95
+  target_description: pelo menos 95% até o 90º dia, com objetivo de execução integral
+    das etapas críticas.
+  milestone_days: 90
+  pact_status: Proposta — aguardando pactuação
+  approved_plan_start: null
+  approval: null
+  effective_from: '1900-01-01'
+  scope: A pactuar
+  resources: A pactuar
+  comparability_break: false
+  formula_code: restructuring_v1
+  normative_refs:
+  - RDC36
+  - CIRURGIA
+  normative_basis: Resolução 36/2013 e protocolo específico avaliado.
+  deviation_response: Identificar etapas falhas por protocolo; capacitar e reobservar
+    a execução.
+  record_type: oportunidade
+  version: 1
+- indicator_id: R10
+  number: 10
+  name: Percentual de profissionais capacitados com avaliação satisfatória
+  purpose: Educação permanente
+  action: Educação permanente
+  unit: '%'
+  improvement: aumentar
+  formula: profissionais elegíveis com capacitação concluída e avaliação satisfatória
+    na competência definida ÷ total de profissionais elegíveis do público definido
+    no período × 100.
+  numerator_definition: profissionais elegíveis com capacitação concluída e avaliação
+    satisfatória na competência definida
+  denominator_definition: total de profissionais elegíveis do público definido no
+    período
+  eligibility_rules:
+  - Presença sem avaliação satisfatória não entra no numerador.
+  - Contar cada pessoa uma vez por competência e período.
+  - Não usar automaticamente os 1.212 profissionais como denominador.
+  - Definir tratamento de admissões, afastamentos e terceirizados.
+  - Separar resultados por competência, função e turno.
+  - Capacitar novos profissionais antes da atuação no processo.
+  conclusion_criteria: Cumprimento comprovado das etapas descritas, com evidência
+    e validação técnica.
+  source: registros de formação, públicos elegíveis e avaliações.
+  collection_method: Inventário e registros verificáveis
+  frequency: semanal na implantação e mensal na rotina.
+  collector: Área responsável — a pactuar
+  validator: Responsável técnico/Qualidade — a pactuar
+  baseline:
+    value: null
+    period: null
+    coverage: null
+    evidence: null
+    status: A levantar no diagnóstico inicial
+  target: 100
+  target_description: 100% do público prioritário até o 60º dia.
+  milestone_days: 60
+  pact_status: Proposta — aguardando pactuação
+  approved_plan_start: null
+  approval: null
+  effective_from: '1900-01-01'
+  scope: A pactuar
+  resources: A pactuar
+  comparability_break: false
+  formula_code: restructuring_v1
+  normative_refs:
+  - RDC63
+  - RDC36
+  normative_basis: Resoluções 63/2011 e 36/2013.
+  deviation_response: Reavaliar competência e capacitar elegíveis, inclusive recém-admitidos
+    antes de atuar.
+  record_type: profissional
+  version: 1
+- indicator_id: R11
+  number: 11
+  name: Percentual de investigações de incidentes concluídas no prazo
+  purpose: Investigação de incidentes
+  action: Investigação de incidentes
+  unit: '%'
+  improvement: aumentar
+  formula: incidentes elegíveis com prazo de investigação vencendo no período, investigados
+    até esse prazo ÷ total de incidentes elegíveis com prazo de investigação vencendo
+    no período × 100.
+  numerator_definition: incidentes elegíveis com prazo de investigação vencendo no
+    período, investigados até esse prazo
+  denominator_definition: total de incidentes elegíveis com prazo de investigação
+    vencendo no período
+  eligibility_rules:
+  - Definir elegibilidade e prazos internos conforme gravidade.
+  - Registrar início da contagem e prazo original.
+  - Mostrar investigações vencidas ainda abertas.
+  - Não confundir investigação concluída com ações corretivas concluídas.
+  - Prazos internos não substituem prazos legais de notificação externa.
+  conclusion_criteria: Cumprimento comprovado das etapas descritas, com evidência
+    e validação técnica.
+  source: triagem, registro de incidentes e relatórios de investigação.
+  collection_method: Inventário e registros verificáveis
+  frequency: semanal para acompanhamento e mensal para consolidação.
+  collector: Área responsável — a pactuar
+  validator: Responsável técnico/Qualidade — a pactuar
+  baseline:
+    value: null
+    period: null
+    coverage: null
+    evidence: null
+    status: A levantar no diagnóstico inicial
+  target: 100
+  target_description: 100%.
+  milestone_days: null
+  pact_status: Proposta — aguardando pactuação
+  approved_plan_start: null
+  approval: null
+  effective_from: '1900-01-01'
+  scope: A pactuar
+  resources: A pactuar
+  comparability_break: false
+  formula_code: restructuring_v1
+  normative_refs:
+  - RDC36
+  normative_basis: Resolução 36/2013.
+  deviation_response: Priorizar gravidade, concluir investigação e acompanhar pendências
+    vencidas.
+  record_type: incidente
+  version: 1
+- indicator_id: R12
+  number: 12
+  name: Percentual de ações corretivas de incidentes concluídas no prazo e com eficácia
+    comprovada
+  purpose: Barreiras corretivas de incidentes
+  action: Barreiras corretivas de incidentes
+  unit: '%'
+  improvement: aumentar
+  formula: ações corretivas de incidentes com prazo original vencendo no período,
+    concluídas e com eficácia validada até esse prazo ÷ total dessas ações com prazo
+    original vencendo no período × 100.
+  numerator_definition: ações corretivas de incidentes com prazo original vencendo
+    no período, concluídas e com eficácia validada até esse prazo
+  denominator_definition: total dessas ações com prazo original vencendo no período
+  eligibility_rules:
+  - Cada ação deve ter identificação própria e vínculo com o incidente.
+  - Um incidente pode gerar várias ações.
+  - Preservar prazo original, alterações e justificativas.
+  - 'Diferenciar este indicador do Indicador 6: aqui o escopo são ações decorrentes
+    de incidentes.'
+  conclusion_criteria: Cumprimento comprovado das etapas descritas, com evidência
+    e validação técnica.
+  source: planos de investigação, registros de execução e validação das barreiras.
+  collection_method: Inventário e registros verificáveis
+  frequency: mensal, com acompanhamento dos riscos graves durante a execução.
+  collector: Área responsável — a pactuar
+  validator: Responsável técnico/Qualidade — a pactuar
+  baseline:
+    value: null
+    period: null
+    coverage: null
+    evidence: null
+    status: A levantar no diagnóstico inicial
+  target: 90
+  target_description: alcançar pelo menos 90% até o 90º dia do plano.
+  milestone_days: 90
+  pact_status: Proposta — aguardando pactuação
+  approved_plan_start: null
+  approval: null
+  effective_from: '1900-01-01'
+  scope: A pactuar
+  resources: A pactuar
+  comparability_break: false
+  formula_code: restructuring_v1
+  normative_refs:
+  - RDC63
+  - RDC36
+  normative_basis: Resoluções 63/2011 e 36/2013.
+  deviation_response: Concluir cada ação e verificar eficácia, mantendo vínculo com
+    o incidente.
+  record_type: acao_incidente
+  version: 1
+- indicator_id: R13
+  number: 13
+  name: Percentual dos dez novos leitos de terapia intensiva com adequação comprovada
+  purpose: Adequação dos dez novos leitos de UTI
+  action: Adequação dos dez novos leitos de UTI
+  unit: '%'
+  improvement: aumentar
+  formula: novos leitos com todos os requisitos aplicáveis conformes e avaliação completa
+    ÷ dez novos leitos × 100.
+  numerator_definition: novos leitos com todos os requisitos aplicáveis conformes
+    e avaliação completa
+  denominator_definition: dez novos leitos
+  eligibility_rules:
+  - Avaliar estrutura, equipamentos, profissionais, processos e segurança, além da
+    documentação.
+  - Os dez leitos estão incluídos nos 40 leitos de terapia intensiva do cenário.
+  - Requisito aplicável não avaliado impede classificar o leito como adequado.
+  - Falha compartilhada deve aparecer em todos os leitos dependentes.
+  - Mostrar cobertura da avaliação e situação por dimensão.
+  - Não usar produção ambulatorial ou volume de internações como comprovação da adequação.
+  conclusion_criteria: Cumprimento comprovado das etapas descritas, com evidência
+    e validação técnica.
+  source: ficha por leito, recursos compartilhados, escalas, testes e documentação.
+  collection_method: Inventário e registros verificáveis
+  frequency: semanal durante as adequações e mensal após sua conclusão.
+  collector: Área responsável — a pactuar
+  validator: Responsável técnico/Qualidade — a pactuar
+  baseline:
+    value: null
+    period: null
+    coverage: null
+    evidence: null
+    status: A levantar no diagnóstico inicial
+  target: 100
+  target_description: dez de dez leitos adequados, após validação técnica.
+  milestone_days: null
+  pact_status: Proposta — aguardando pactuação
+  approved_plan_start: null
+  approval: null
+  effective_from: '1900-01-01'
+  scope: A pactuar
+  resources: A pactuar
+  comparability_break: false
+  formula_code: restructuring_v1
+  normative_refs:
+  - RDC7
+  - RDC26
+  - RDC137
+  - RDC50
+  - RDC51
+  - RDC509
+  - RDC36
+  normative_basis: Resolução 7/2010 e alterações, incluindo 26/2012 e 137/2017, e
+    Resoluções 50/2002, 51/2011, 509/2021 e 36/2013, conforme aplicabilidade.
+  deviation_response: Encaminhar falha técnica ao responsável; avaliar dependências
+    compartilhadas sem liberar condição insegura.
+  record_type: leito
+  version: 1
+- indicator_id: R14
+  number: 14
+  name: Percentual de notificações de incidentes triadas no prazo
+  purpose: Triagem e cultura de notificação
+  action: Triagem e cultura de notificação
+  unit: '%'
+  improvement: aumentar
+  formula: notificações com prazo original de triagem vencendo no período, triadas
+    até esse prazo ÷ total de notificações com prazo original de triagem vencendo
+    no período × 100.
+  numerator_definition: notificações com prazo original de triagem vencendo no período,
+    triadas até esse prazo
+  denominator_definition: total de notificações com prazo original de triagem vencendo
+    no período
+  eligibility_rules:
+  - Definir prazo interno por gravidade e início da contagem.
+  - Não contar duas vezes a mesma notificação.
+  - Mostrar notificações recebidas, triadas e pendentes como contagens complementares.
+  - Não criar meta de redução da quantidade de relatos.
+  - Mais notificações podem refletir melhora da confiança e da detecção.
+  - A taxa de notificações por 1.000 pacientes-dia pode ser análise complementar,
+    somente com fontes consistentes e mesmo escopo de internação. Ela não substitui
+    o percentual de triagem nem representa incidência real de dano.
+  conclusion_criteria: Cumprimento comprovado das etapas descritas, com evidência
+    e validação técnica.
+  source: registro de notificações e triagem.
+  collection_method: Inventário e registros verificáveis
+  frequency: acompanhamento conforme gravidade e consolidação mensal.
+  collector: Área responsável — a pactuar
+  validator: Responsável técnico/Qualidade — a pactuar
+  baseline:
+    value: null
+    period: null
+    coverage: null
+    evidence: null
+    status: A levantar no diagnóstico inicial
+  target: 100
+  target_description: 100%.
+  milestone_days: null
+  pact_status: Proposta — aguardando pactuação
+  approved_plan_start: null
+  approval: null
+  effective_from: '1900-01-01'
+  scope: A pactuar
+  resources: A pactuar
+  comparability_break: false
+  formula_code: restructuring_v1
+  normative_refs:
+  - RDC36
+  normative_basis: Resolução 36/2013, especialmente artigos 7º, 9º e 10.
+  deviation_response: Tratar atrasos de triagem, sem incentivar redução artificial
+    das notificações.
+  record_type: notificacao
+  version: 1

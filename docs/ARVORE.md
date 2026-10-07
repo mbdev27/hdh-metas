@@ -1,158 +1,178 @@
-# Árvore completa
+# Árvore completa da entrega
+
+Arquivos privados, caches, ambiente virtual e credenciais não são distribuídos.
 
 ```text
-hdh-metas/
-  .github/workflows/tests.yml
-  .gitignore
-  .streamlit/config.toml
-  .streamlit/secrets.toml.example
-  README.md
-  app.py
-  config/contract_documents.yaml
-  config/contract_rules.yaml
-  config/demo_rules.yaml
-  config/indicators.yaml
-  config/institutional.yaml
-  config/organizational_units.yaml
-  config/sih_sources.json
-  data/mock/producao.csv
-  data/mock/qualidade.csv
-  data/real/evidencias.json
-  data/real/producao.csv
-  data/real/qualidade.csv
-  data/sih/observacoes.csv
-  data/sih/originais/sih_cnv_qipe181238186_224_24_204.csv
-  data/sih/originais/sih_cnv_qipe181254186_224_24_204.csv
-  data/sih/originais/sih_cnv_qipe181314186_224_24_204.csv
-  data/sih/originais/sih_cnv_qipe181348186_224_24_204.csv
-  data/sih/originais/sih_cnv_qipe181404186_224_24_204.csv
-  data/sih/originais/sih_cnv_qipe181422186_224_24_204.csv
-  data/sih/originais/sih_cnv_qipe181510186_224_24_204.csv
-  data/sih/originais/sih_cnv_qipe181523186_224_24_204.csv
-  data/sih/originais/sih_cnv_qipe181534186_224_24_204.csv
-  data/sih/originais/sih_cnv_qipe181630186_224_24_204.csv
-  data/sih/originais/sih_cnv_qipe181645186_224_24_204.csv
-  data/sih/originais/sih_cnv_qipe181656186_224_24_204.csv
-  docs/ARVORE.md
-  docs/AUDITORIA.md
-  docs/PITCH.md
-  docs/VALIDACAO.md
-  documents/DOC001.pdf
-  documents/DOC002.pdf
-  documents/DOC003.pdf
-  documents/DOC004.pdf
-  documents/DOC005.pdf
-  documents/DOC006.pdf
-  documents/DOC007.pdf
-  documents/DOC008.pdf
-  documents/DOC009.pdf
-  documents/DOC010.pdf
-  documents/DOC011.pdf
-  documents/DOC013.pdf
-  documents/DOC014.pdf
-  documents/DOC015.pdf
-  documents/DOC016.pdf
-  documents/DOC017.pdf
-  documents/DOC018.pdf
-  documents/DOC019.pdf
-  documents/DOC020.pdf
-  documents/DOC023.pdf
-  documents/DOC024.pdf
-  documents/DOC025.pdf
-  documents/DOC026.pdf
-  documents/DOC027.pdf
-  documents/DOC028.pdf
-  documents/DOC029.pdf
-  documents/DOC030.pdf
-  documents/DOC031.pdf
-  documents/DOC032.pdf
-  documents/DOC033.pdf
-  documents/DOC034.pdf
-  documents/DOC035.pdf
-  documents/DOC036.pdf
-  documents/DOC037.pdf
-  documents/DOC038.pdf
-  documents/DOC039.pdf
-  documents/DOC040.pdf
-  documents/DOC041.pdf
-  documents/DOC042.pdf
-  documents/DOC043.pdf
-  documents/DOC044.pdf
-  documents/DOC045.pdf
-  documents/DOC046.pdf
-  documents/DOC048.pdf
-  documents/DOC049.pdf
-  documents/DOC050.pdf
-  documents/DOC051.pdf
-  documents/DOC053.pdf
-  documents/DOC054.pdf
-  documents/DOC055.pdf
-  documents/DOC056.pdf
-  documents/DOC057.pdf
-  documents/DOC058.pdf
-  documents/DOC059.pdf
-  documents/DOC060.pdf
-  documents/DOC061.pdf
-  documents/DOC062.pdf
-  documents/DOC063.pdf
-  documents/DOC064.pdf
-  documents/DOC065.pdf
-  pages/01_Tela_Inicial.py
-  pages/02_Indicadores.py
-  pages/03_Instrumentos_de_Gestao.py
-  pages/04_Pareceres_CMA.py
-  pages/05_Producao_Hospitalar.py
-  pytest.ini
-  requirements-lock.txt
-  requirements.txt
-  scripts/audit_documents.py
-  scripts/generate_mock_data.py
-  scripts/generate_password_hash.py
-  src/__init__.py
-  src/auth.py
-  src/cache.py
-  src/calculations.py
-  src/charts.py
-  src/cma_ui.py
-  src/contract_engine.py
-  src/contract_registry.py
-  src/data_loader.py
-  src/data_ui.py
-  src/data_validation.py
-  src/document_ui.py
-  src/exports.py
-  src/formatting.py
-  src/governance_ui.py
-  src/historical.py
-  src/home_ui.py
-  src/indicator_views.py
-  src/indicators.py
-  src/indicators_ui.py
-  src/management.py
-  src/pdf_viewer.py
-  src/portal.py
-  src/presentation.py
-  src/reporting.py
-  src/safe_ui.py
-  src/scoring.py
-  src/sih.py
-  src/sih_ui.py
-  src/summary_ui.py
-  src/theme.py
-  src/ui.py
-  src/utils.py
-  tests/test_auth.py
-  tests/test_cache.py
-  tests/test_contract_engine.py
-  tests/test_contract_versions.py
-  tests/test_documentary_data.py
-  tests/test_interactions.py
-  tests/test_management.py
-  tests/test_pdf_viewer.py
-  tests/test_presentation.py
-  tests/test_quality_scoring.py
-  tests/test_quantitative_scoring.py
-  tests/test_sih.py
-  tests/test_ui.py
-  tests/test_validation.py
+.github/workflows/tests.yml
+.gitignore
+.streamlit/config.toml
+.streamlit/secrets.toml.example
+README.md
+app.py
+config/contract_documents.yaml
+config/contract_rules.yaml
+config/demo_rules.yaml
+config/indicators.yaml
+config/institutional.yaml
+config/organizational_units.yaml
+config/restructuring_indicators.yaml
+config/restructuring_references.yaml
+config/sih_sources.json
+data/mock/producao.csv
+data/mock/qualidade.csv
+data/real/evidencias.json
+data/real/producao.csv
+data/real/qualidade.csv
+data/sih/observacoes.csv
+data/sih/originais/sih_cnv_qipe181238186_224_24_204.csv
+data/sih/originais/sih_cnv_qipe181254186_224_24_204.csv
+data/sih/originais/sih_cnv_qipe181314186_224_24_204.csv
+data/sih/originais/sih_cnv_qipe181348186_224_24_204.csv
+data/sih/originais/sih_cnv_qipe181404186_224_24_204.csv
+data/sih/originais/sih_cnv_qipe181422186_224_24_204.csv
+data/sih/originais/sih_cnv_qipe181510186_224_24_204.csv
+data/sih/originais/sih_cnv_qipe181523186_224_24_204.csv
+data/sih/originais/sih_cnv_qipe181534186_224_24_204.csv
+data/sih/originais/sih_cnv_qipe181630186_224_24_204.csv
+data/sih/originais/sih_cnv_qipe181645186_224_24_204.csv
+data/sih/originais/sih_cnv_qipe181656186_224_24_204.csv
+docs/AUDITORIA.md
+docs/HISTORICO_DE_ACESSO.md
+docs/PITCH.md
+docs/REESTRUTURACAO.md
+docs/VALIDACAO.md
+documents/DOC001.pdf
+documents/DOC002.pdf
+documents/DOC003.pdf
+documents/DOC004.pdf
+documents/DOC005.pdf
+documents/DOC006.pdf
+documents/DOC007.pdf
+documents/DOC008.pdf
+documents/DOC009.pdf
+documents/DOC010.pdf
+documents/DOC011.pdf
+documents/DOC013.pdf
+documents/DOC014.pdf
+documents/DOC015.pdf
+documents/DOC016.pdf
+documents/DOC017.pdf
+documents/DOC018.pdf
+documents/DOC019.pdf
+documents/DOC020.pdf
+documents/DOC023.pdf
+documents/DOC024.pdf
+documents/DOC025.pdf
+documents/DOC026.pdf
+documents/DOC027.pdf
+documents/DOC028.pdf
+documents/DOC029.pdf
+documents/DOC030.pdf
+documents/DOC031.pdf
+documents/DOC032.pdf
+documents/DOC033.pdf
+documents/DOC034.pdf
+documents/DOC035.pdf
+documents/DOC036.pdf
+documents/DOC037.pdf
+documents/DOC038.pdf
+documents/DOC039.pdf
+documents/DOC040.pdf
+documents/DOC041.pdf
+documents/DOC042.pdf
+documents/DOC043.pdf
+documents/DOC044.pdf
+documents/DOC045.pdf
+documents/DOC046.pdf
+documents/DOC048.pdf
+documents/DOC049.pdf
+documents/DOC050.pdf
+documents/DOC051.pdf
+documents/DOC053.pdf
+documents/DOC054.pdf
+documents/DOC055.pdf
+documents/DOC056.pdf
+documents/DOC057.pdf
+documents/DOC058.pdf
+documents/DOC059.pdf
+documents/DOC060.pdf
+documents/DOC061.pdf
+documents/DOC062.pdf
+documents/DOC063.pdf
+documents/DOC064.pdf
+documents/DOC065.pdf
+pages/01_Tela_Inicial.py
+pages/02_Indicadores.py
+pages/03_Instrumentos_de_Gestao.py
+pages/04_Pareceres_CMA.py
+pages/05_Producao_Hospitalar.py
+pages/06_Indicadores_de_Reestruturacao.py
+pages/07_Administracao.py
+pytest.ini
+requirements-lock.txt
+requirements.txt
+scripts/audit_documents.py
+scripts/generate_mock_data.py
+scripts/generate_password_hash.py
+src/__init__.py
+src/access_history.py
+src/admin_ui.py
+src/auth.py
+src/cache.py
+src/calculations.py
+src/charts.py
+src/cma_ui.py
+src/contract_engine.py
+src/contract_registry.py
+src/data_loader.py
+src/data_ui.py
+src/data_validation.py
+src/document_ui.py
+src/exports.py
+src/formatting.py
+src/governance_ui.py
+src/historical.py
+src/home_ui.py
+src/indicator_views.py
+src/indicators.py
+src/indicators_ui.py
+src/management.py
+src/pdf_viewer.py
+src/portal.py
+src/presentation.py
+src/reporting.py
+src/restructuring/__init__.py
+src/restructuring/calculations.py
+src/restructuring/demo.py
+src/restructuring/file_store.py
+src/restructuring/repository.py
+src/restructuring/schema.py
+src/restructuring/settings.py
+src/restructuring/ui.py
+src/safe_ui.py
+src/scoring.py
+src/sih.py
+src/sih_ui.py
+src/summary_ui.py
+src/theme.py
+src/ui.py
+src/utils.py
+tests/conftest.py
+tests/test_access_history.py
+tests/test_auth.py
+tests/test_cache.py
+tests/test_contract_engine.py
+tests/test_contract_versions.py
+tests/test_documentary_data.py
+tests/test_interactions.py
+tests/test_management.py
+tests/test_pdf_viewer.py
+tests/test_presentation.py
+tests/test_quality_scoring.py
+tests/test_quantitative_scoring.py
+tests/test_restructuring.py
+tests/test_restructuring_ui.py
+tests/test_sih.py
+tests/test_ui.py
+tests/test_validation.py
 ```
