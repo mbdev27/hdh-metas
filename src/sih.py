@@ -3,6 +3,7 @@ from pathlib import Path
 import csv,hashlib,re,json
 import pandas as pd
 from src.contract_registry import ROOT
+from src.cache import file_version,json_versioned,csv_versioned
 MONTHS={'Janeiro':1,'Fevereiro':2,'Março':3,'Abril':4,'Maio':5,'Junho':6,'Julho':7,'Agosto':8,'Setembro':9,'Outubro':10,'Novembro':11,'Dezembro':12}
 NON_ADDITIVE={'Taxa mortalidade','Média permanência','Valor médio intern'}
 
@@ -34,8 +35,8 @@ def parse_tabnet(content):
     return pd.DataFrame(rows),dict(titulo=title,medida=measure,dimensao=dimension,cnes='6559379',unidade='HOSPITAL DOM HELDER CAMARA',periodo_solicitado=lines[3].strip(),hash_sha256=hashlib.sha256(content).hexdigest(),fonte='Ministério da Saúde — SIH/SUS — DATASUS/TabNet',url='https://tabnet.datasus.gov.br/',data_extracao='2026-10-06',observacao='Dados dos últimos seis meses sujeitos a atualização, conforme nota da fonte. Símbolos originais preservados; não convertidos automaticamente em zero.')
 
 def load_sih():
-    meta=json.loads((ROOT/'config/sih_sources.json').read_text())
-    data=pd.read_csv(ROOT/'data/sih/observacoes.csv',dtype={'competencia':str})
+    meta=json_versioned(file_version(ROOT/'config/sih_sources.json'))
+    data=csv_versioned(file_version(ROOT/'data/sih/observacoes.csv'))
     return data,meta
 
 def monthly_series(data,start='2020-01',end='2026-07'):

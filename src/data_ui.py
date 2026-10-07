@@ -25,7 +25,7 @@ def show_report(report):
 def render_data():
     if st.session_state.get("role")!="ADMIN":
         st.info("A importação de dados está disponível para o administrador.");return
-    from src.portal import present_table
+    from src.presentation import present_table
     if 'production' not in st.session_state:
         p,q=mocks();p,rp,sp=validate(p,'producao');q,rq,sq=validate(q,'qualidade')
         st.session_state.update(production=p,quality=q,reports=pd.concat([rp.assign(base='Produção'),rq.assign(base='Qualidade')]),data_stats=[sp,sq],import_audit=[])
@@ -74,10 +74,11 @@ def render_data():
         with st.expander('Histórico de importações'):
             st.dataframe(pd.DataFrame(st.session_state.import_audit)[['arquivo','linhas','data']].rename(columns={'arquivo':'Arquivo','linhas':'Registros','data':'Importado em'}),hide_index=True)
 
-    st.download_button('Exportar base de produção da sessão',csv_bytes(st.session_state.production),'producao_sessao.csv',key='exp_prod')
-    st.download_button('Exportar base de qualidade da sessão',csv_bytes(st.session_state.quality),'qualidade_sessao.csv',key='exp_qual')
-    tables={'Resumo':t,'Produção':st.session_state.production,'Qualidade':st.session_state.quality,'Trimestre':quarter(st.session_state.production,st.session_state.quality,pd.Period(month,freq='Q'))[0],'Monitoramento':t[t.grupo=='monitoramento'],'Qualidade dos Dados':st.session_state.reports,'Regras Contratuais':pd.DataFrame(load('demo_rules.yaml')['rules']).astype(str)}
-    st.download_button('Exportar simulação XLSX',workbook(tables),'simulacao_hdh.xlsx',key='exp_sim')
+    if st.checkbox('Preparar arquivos da sessão para download',key='session_prepare_exports'):
+        st.download_button('Exportar base de produção da sessão',csv_bytes(st.session_state.production),'producao_sessao.csv',key='exp_prod')
+        st.download_button('Exportar base de qualidade da sessão',csv_bytes(st.session_state.quality),'qualidade_sessao.csv',key='exp_qual')
+        tables={'Resumo':t,'Produção':st.session_state.production,'Qualidade':st.session_state.quality,'Trimestre':quarter(st.session_state.production,st.session_state.quality,pd.Period(month,freq='Q'))[0],'Monitoramento':t[t.grupo=='monitoramento'],'Qualidade dos Dados':st.session_state.reports,'Regras Contratuais':pd.DataFrame(load('demo_rules.yaml')['rules']).astype(str)}
+        st.download_button('Exportar simulação XLSX',workbook(tables),'simulacao_hdh.xlsx',key='exp_sim')
     with st.expander('Dashboard do cenário de simulação',expanded=False):
         st.info('DADOS SIMULADOS / IMPORTADOS NA SESSÃO — não correspondem ao histórico documental CMA.')
         present_table(t)

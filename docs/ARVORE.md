@@ -103,35 +103,51 @@ hdh-metas/
   pages/04_Pareceres_CMA.py
   pages/05_Producao_Hospitalar.py
   pytest.ini
+  requirements-lock.txt
   requirements.txt
   scripts/audit_documents.py
   scripts/generate_mock_data.py
   scripts/generate_password_hash.py
   src/__init__.py
   src/auth.py
+  src/cache.py
   src/calculations.py
+  src/charts.py
+  src/cma_ui.py
   src/contract_engine.py
   src/contract_registry.py
   src/data_loader.py
   src/data_ui.py
   src/data_validation.py
+  src/document_ui.py
   src/exports.py
   src/formatting.py
+  src/governance_ui.py
   src/historical.py
+  src/home_ui.py
+  src/indicator_views.py
   src/indicators.py
+  src/indicators_ui.py
+  src/management.py
   src/pdf_viewer.py
   src/portal.py
+  src/presentation.py
+  src/reporting.py
   src/safe_ui.py
   src/scoring.py
   src/sih.py
   src/sih_ui.py
+  src/summary_ui.py
   src/theme.py
   src/ui.py
   src/utils.py
   tests/test_auth.py
+  tests/test_cache.py
   tests/test_contract_engine.py
   tests/test_contract_versions.py
   tests/test_documentary_data.py
+  tests/test_interactions.py
+  tests/test_management.py
   tests/test_pdf_viewer.py
   tests/test_presentation.py
   tests/test_quality_scoring.py

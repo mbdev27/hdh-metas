@@ -4,9 +4,10 @@ import plotly.express as px
 import streamlit as st
 from src.sih import load_sih,monthly_series,NON_ADDITIVE,measure_unit
 from src.contract_registry import ROOT
-from src.portal import chart
+from src.presentation import chart,section
 from src.theme import sidebar_notice
-from src.exports import csv_bytes,workbook
+from src.exports import csv_bytes
+from src.reporting import sih_workbook
 
 
 def formatted(value,unit):
@@ -64,27 +65,27 @@ def render_sih():
     c[2].metric('Óbitos informados no recorte',formatted(None if deaths.valor.isna().any() else deaths.valor.sum(),'óbitos'))
     c[3].metric('Mortalidade no último mês',formatted(rate.iloc[-1].valor,'%'))
     st.caption(f'Período selecionado: {start} a {end} · {selected.competencia.nunique()} meses · Mortalidade do card: {latest}. Não calculada mortalidade acumulada sem denominador apropriado.')
-    overview,profile,financial,mortality,sources=st.tabs(['Visão geral','Perfil assistencial','Valores e permanência','Óbitos e mortalidade','Fontes e tabelas'])
-    with overview:
+    active=section(['Visão geral','Perfil assistencial','Valores e permanência','Óbitos e mortalidade','Fontes e tabelas'],'sih_section')
+    if active=='Visão geral':
         trend_and_annual(data,selected,'AIH aprovadas')
         st.caption('AIHs são autorizações aprovadas no SIH; não representam contagem de todos os procedimentos secundários realizados.')
-    with profile:
+    elif active=='Perfil assistencial':
         dimension=st.selectbox('Classificação da produção',['Caráter atendimento','Grupo procedimento','Subgrupo proced.'],key='sih_dimension')
         series=selected[(selected.medida=='AIH aprovadas')&(selected.dimensao==dimension)&(selected.categoria!='Total')]
         table=series.pivot(index='competencia',columns='categoria',values='valor')
         cats=sorted(series.categoria.unique());chosen=st.multiselect('Categorias para comparar',cats,default=cats if dimension=='Grupo procedimento' else cats[:min(len(cats),5)],key='sih_categories_'+dimension)
         if chosen:chart(px.line(series[series.categoria.isin(chosen)],x='competencia',y='valor',color='categoria',markers=True,title='AIHs aprovadas por '+dimension.lower(),labels={'valor':'AIHs aprovadas','competencia':'Mês do atendimento'}))
         st.dataframe(table,width='stretch');st.caption('Total excluído da comparação de categorias para evitar dupla contagem. Símbolos sem valor numérico permanecem ausentes. Grupos SIGTAP do SIH não são automaticamente equivalentes às categorias contratuais de cirurgia.')
-    with financial:
+    elif active=='Valores e permanência':
         measures=sorted(set(selected.medida)-{'AIH aprovadas','Óbitos','Taxa mortalidade'})
         measure=st.selectbox('Medida de valores ou permanência',measures,key='sih_value_measure')
         trend_and_annual(data,selected,measure,key='financial')
         st.caption('Valor total e seus componentes hospitalares/profissionais são medidas distintas: não somar os componentes novamente ao valor total. Valor médio de internação é publicado na fonte; não é obtido dividindo automaticamente por AIHs.')
-    with mortality:
+    elif active=='Óbitos e mortalidade':
         measure=st.radio('Medida assistencial',['Óbitos','Taxa mortalidade'],horizontal=True,key='sih_mortality_measure')
         trend_and_annual(data,selected,measure,key='mortality')
         st.caption('Mortalidade SIH é a taxa publicada no sistema. Não equivale à taxa de revisão de óbitos institucional, nem constitui uma meta financeira adicional.')
-    with sources:
+    elif active=='Fontes e tabelas':
         st.warning('Os CSVs também contêm dezembro/2019. Esse mês está preservado nos originais e nas observações, mas fora do recorte padrão 2020–2026. Totais gerais originais podem incluí-lo.')
         st.info('Foram recebidos 12 arquivos, com 11 conteúdos únicos. A segunda exportação de mortalidade é idêntica por SHA-256 e não é contada novamente.')
         st.caption('Notas da fonte: dados referentes aos últimos seis meses sujeitos a atualização. “-”, “...” e campos vazios são conservados como símbolos originais, sem conversão automática para zero.')
@@ -96,6 +97,6 @@ def render_sih():
         canonical=meta['duplicate_of'] or chosen;original=data[data.source_id==canonical]
         st.dataframe(original[['medida','dimensao','competencia','ano','categoria','valor','valor_original']].rename(columns={'medida':'Medida','dimensao':'Classificação','competencia':'Competência','ano':'Ano','categoria':'Categoria','valor':'Valor','valor_original':'Valor na fonte'}),hide_index=True,width='stretch')
     with st.expander('Exportar a produção hospitalar'):
+        if not st.checkbox('Preparar arquivos para download',key='sih_prepare_exports'):return
         st.download_button('CSV — dados mensais do recorte',csv_bytes(selected),'hdh_sih_mensal.csv',key='sih_export_csv')
-        sheets={'Mensal':selected,'Anuais publicados':data[(data.tipo_linha=='ano_publicado')&(data.ano>=2020)],'Metadados':pd.DataFrame(metadata).astype(str),'Totais originais':data[data.tipo_linha=='total_publicado']}
-        st.download_button('XLSX — dados SIH e fontes',workbook(sheets),'hdh_sih.xlsx',key='sih_export_xlsx')
+        st.download_button('XLSX — dados SIH e fontes',sih_workbook(data,selected,metadata),'hdh_sih.xlsx',key='sih_export_xlsx')

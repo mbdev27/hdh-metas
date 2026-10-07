@@ -24,7 +24,7 @@ Sem configuração válida, o acesso é bloqueado. A senha não fica no GitHub. 
 ## O que existe no painel
 
 - **Tela inicial**: apresentação do hospital, especialidades, missão, visão, valores, endereço e contatos, com fontes SES/PE e FGH. Redação própria, identificação CNES e contatos institucionais.
-- **Indicadores**: metas, realizado, diferença, alcance e pontuação quando aferível; séries mensais, trimestre, comparação anual e fundamentação. Aba de qualidade e monitoramento; metas por versão; gestão de uploads e cenário de simulação.
+- **Indicadores**: metas, realizado, diferença, alcance e pontuação quando aferível; séries mensais, trimestre, comparação anual e fundamentação. Resumo gerencial com maiores desvios, pendências e acesso direto aos indicadores; gráficos de qualidade e monitoramento, metas por versão e gestão de uploads.
 - **Instrumentos de gestão**: biblioteca com download dos PDFs originais, linha do tempo, mapa de alterações, metas instituídas por documento, inventário, lacunas e condições financeiras.
 - **Produção Hospitalar**: dados SIH/SUS do CNES 6559379, janeiro/2020–julho/2026; AIHs por caráter, grupo e subgrupo, valores aprovados, permanência, óbitos e mortalidade; fonte TabNet e extração em 06/10/2026.
 - **Pareceres CMA**: biblioteca por período, séries por mês e ano, tabelas, evidências e qualidade dos dados.
@@ -137,3 +137,21 @@ O usuário administrativo é `admin`. Configurações antigas com o nome `adm` s
 ### Acesso da diretoria
 
 O administrador continua usando `admin`. Para habilitar um segundo acesso com perfil GESTOR, gere outro hash com `python scripts/generate_password_hash.py`. No Streamlit Cloud, abra Settings → Secrets e acrescente `director_username = "diretoria"` e `director_password_hash = "HASH_GERADO"` ao bloco `[auth]` existente, preservando as chaves do administrador. Não crie outro bloco `[auth]`. O perfil GESTOR consulta painéis e documentos e exporta resultados; a gestão de dados permanece restrita ao ADMIN. Alternativamente, configure `DIRECTOR_USERNAME` e `DIRECTOR_PASSWORD_HASH` no ambiente. Sem essas chaves, apenas o administrador permanece habilitado.
+
+## Desempenho e organização das telas
+
+A página Indicadores abre no Resumo gerencial. Selecione contrato e competência para visualizar o alcance por indicador, os maiores déficits, a variação em relação ao mês anterior e as pendências de qualidade. “Ver análise do indicador” abre a série detalhada no mesmo período. Variações não são comparadas quando há mudança de regra; não existe soma de produções de unidades diferentes nem estimativa de pontuação total com evidências incompletas.
+
+Os seletores de seção substituem abas de execução simultânea. Apenas a seção escolhida é renderizada, inclusive em Produção Hospitalar, Instrumentos e Pareceres CMA. Para exportar, marque **Preparar arquivos para download**; o XLSX é gerado sob demanda. Exportações de dados públicos reutilizam cache. Dados importados e justificativas permanecem exclusivamente na sessão, sem cache compartilhado.
+
+O cache público considera caminho, data de modificação em nanossegundos e tamanho dos arquivos. Mudanças nos CSVs, nas evidências ou nos YAMLs invalidam as leituras correspondentes; mudanças nas regras também invalidam o enriquecimento e a consolidação dos dados. PDFs usam cache de bytes e imagens paginadas. Não altere arquivos preservando artificialmente a mesma data de modificação.
+
+Os gráficos quantitativos distinguem a meta de 100% e a faixa financeira máxima de 85%. A opção **Comparar os mesmos meses entre anos** limita o recorte aos meses do ano mais recente disponível, mantendo contratos separados. Resultados ausentes não são preenchidos com zero. Metas numéricas qualitativas são apresentadas quando identificadas; resultados textuais continuam como categorias.
+
+`src/portal.py` cuida apenas do acesso e encaminhamento das telas. Os módulos `home_ui.py`, `indicators_ui.py`, `governance_ui.py` e `cma_ui.py` organizam as páginas; `indicator_views.py`, `document_ui.py`, `presentation.py` e `charts.py` agrupam componentes. `management.py` calcula o resumo; `cache.py` e `reporting.py` cuidam dos caches públicos.
+
+## Dependências reproduzíveis
+
+`requirements.txt` fixa as dependências diretas e usa `requirements-lock.txt` para fixar as dependências transitivas. Instale normalmente com `pip install -r requirements.txt`. Atualizações de versões devem ser deliberadas, com revisão do arquivo de restrições e testes em Python 3.12 e 3.13. Não substitua as versões por intervalos antes de validar a implantação.
+
+Os testes adicionais verificam troca de seções e filtros, navegação do resumo ao indicador, mudança de página/ano dos PDFs, competências de transição, invalidação do cache e o fluxo de leitura, mapeamento, prévia, confirmação e consolidação da importação. Como AppTest não automatiza o seletor nativo de arquivos do navegador, o teste fornece um arquivo agregado ao ponto de upload e exercita o restante da interface.

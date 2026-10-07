@@ -23,6 +23,7 @@ def test_procedure_groups_all_selected():
     at=AppTest.from_file(ROOT/'pages/05_Producao_Hospitalar.py',default_timeout=40)
     for key,value in dict(authenticated=True,username='admin',role='ADMIN',login_time=time.time()).items():at.session_state[key]=value
     at.run()
+    at.get('button_group')[0].set_value('Perfil assistencial').run()
     next(s for s in at.selectbox if s.label=='Classificação da produção').select('Grupo procedimento').run()
     selection=next(s for s in at.multiselect if s.label=='Categorias para comparar')
     assert set(selection.value)==set(selection.options)
@@ -33,4 +34,4 @@ def test_director_has_no_data_management_tab():
     for key,value in dict(authenticated=True,username='diretoria',role='GESTOR',login_time=time.time()).items():at.session_state[key]=value
     at.run()
     assert not at.error and not at.exception
-    assert not any(t.label=='Gestão de dados' for t in at.tabs)
+    assert 'Gestão de dados' not in at.get('button_group')[0].options

@@ -1,14 +1,23 @@
 """Public CMA aggregates. Original observations and normative rules remain separate."""
 import pandas as pd
 import unicodedata
+import streamlit as st
+from src.cache import versions,file_version,json_versioned,csv_versioned
 from src.contract_registry import ROOT,load
 from src.contract_engine import ContractEngine
 from src.scoring import score
 
 def real_data():
-    p=pd.read_csv(ROOT/'data/real/producao.csv',dtype={'competencia':str})
-    q=pd.read_csv(ROOT/'data/real/qualidade.csv',dtype={'competencia':str})
+    paths=[ROOT/'data/real'/name for name in ('producao.csv','qualidade.csv')]
+    paths += [ROOT/'config'/name for name in ('contract_rules.yaml','indicators.yaml','contract_documents.yaml')]
+    return _real_data(versions(paths))
+
+
+@st.cache_data(max_entries=4,show_spinner=False)
+def _real_data(file_versions):
+    p=csv_versioned(file_versions[0]);q=csv_versioned(file_versions[1])
     return enrich(p),enrich_quality(q)
+
 
 def names():return {i['indicator_id']:i['nome'] for i in load('indicators.yaml')['indicators']}
 
@@ -59,16 +68,21 @@ def enrich_quality(data):
     return pd.DataFrame(out)
 
 def aggregate(data,freq='Q'):
+    return _aggregate(data,freq,file_version(ROOT/'config/contract_rules.yaml'))
+
+
+@st.cache_data(max_entries=32,show_spinner=False)
+def _aggregate(data,freq,rule_version):
+    engine=ContractEngine()
     work=data.copy();work['periodo']=pd.PeriodIndex(work.competencia,freq='M').asfreq(freq).astype(str);out=[]
     for (period,contract,id_),group in work.groupby(['periodo','contrato','indicator_id'],sort=True):
         expected=3 if freq=='Q' else 12
         missing=group.realizado.isna().any();actual=None if missing else group.realizado.sum()
         target=group.meta_contratual.sum();rate=None if actual is None or target<=0 else actual/target*100
-        rule_ids=group.regra.dropna().unique();r=next((r for r in ContractEngine().rules if len(rule_ids)==1 and r['rule_id']==rule_ids[0]),None)
+        rule_ids=group.regra.dropna().unique();r=next((r for r in engine.rules if len(rule_ids)==1 and r['rule_id']==rule_ids[0]),None)
         out.append(dict(periodo=period,contrato=contract,indicator_id=id_,nome=group.iloc[0]['nome'],meses_presentes=group.competencia.nunique(),meses_esperados=expected,meta_acumulada=target,realizado=actual,atingimento=rate,pontuacao=score(rate,r) if r and freq=='Q' and len(group)==3 else None,cobertura='COMPLETA' if len(group)==expected else 'PARCIAL — SOMENTE MESES DOCUMENTADOS',situacao='SEM DADOS' if missing else 'META ATINGIDA' if rate>=100 else 'ATENÇÃO',documentos=', '.join(sorted(group.documento_fonte.unique()))))
     return pd.DataFrame(out)
 
 def evidence(document_id,page=None):
-    import json
-    rows=json.loads((ROOT/'data/real/evidencias.json').read_text())
+    rows=json_versioned(file_version(ROOT/'data/real/evidencias.json'))
     return '\n\n'.join(f"PÁGINA {r['pagina']}\n{r['texto']}" for r in rows if r['document_id']==document_id and (page is None or r['pagina']==page))

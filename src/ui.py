@@ -1,2 +1,2 @@
-"""UI entry point retained for imports; four-area portal implementation."""
+"""Compatibility entry point; screens are implemented in dedicated UI modules."""
 from src.portal import render
