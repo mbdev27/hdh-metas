@@ -13,8 +13,8 @@ from src.formatting import currency
 
 COLORS={'Atingida':'#24956a','Não atingida':'#d29520','Crítico':'#d35a64','SEM DADOS':'#93a3b4'}
 
-def chart(fig):
-    fig.update_layout(font=dict(family='sans-serif',color='#18364e'),paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='#ffffff',margin=dict(l=15,r=15,t=35,b=15),legend_title_text='',hovermode='x unified')
+def chart(fig,hovermode="x unified"):
+    fig.update_layout(font=dict(family='sans-serif',color='#18364e'),paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='#ffffff',margin=dict(l=15,r=15,t=35,b=15),legend_title_text='',hovermode=hovermode)
     st.plotly_chart(fig,width='stretch')
 
 def public_documents():
@@ -184,14 +184,27 @@ def rules_view():
     st.warning('10º Termo Aditivo — DOCUMENTO NÃO DISPONÍVEL. Não se presume que deixou de alterar metas.')
 
 
+def instrument_timeline(items):
+    from textwrap import wrap
+    timeline=pd.DataFrame([d for d in items if d.get('data_assinatura')])
+    timeline['data']=pd.to_datetime(timeline.data_assinatura)
+    timeline['instrumento']=timeline.apply(lambda row:document_label(row.to_dict()),axis=1)
+    timeline['objetivo']=timeline.objeto.map(lambda text:'<br>'.join(escape(line) for line in wrap(str(text),65)))
+    timeline['impacto']=timeline.escopo_alteracao.map(lambda text:escape(str(text)))
+    timeline['assinatura']=timeline.data.dt.strftime('%d/%m/%Y')
+    return px.scatter(timeline,x='data',y='tipo_documento',color='tipo_documento',hover_name='instrumento',
+        hover_data={'data':False,'tipo_documento':False,'objetivo':True,'impacto':True,'assinatura':True},
+        labels={'data':'Data de assinatura','tipo_documento':'Tipo de instrumento','objetivo':'Objetivo do instrumento','impacto':'Escopo da alteração','assinatura':'Assinatura'},
+        title='Linha do tempo — datas de assinatura')
+
+
 def instruments():
     docs=public_documents();items=[d for d in docs if d['tipo_documento']!='Parecer CMA' and not d['excluido']]
     items.sort(key=lambda d:(d.get('data_assinatura') or '9999-12-31',d.get('numero') or 0,d['document_id']))
     st.title('Instrumentos de gestão');st.write('Do instrumento à meta: conheça o que foi pactuado e o escopo de cada alteração.')
     a,b,c=st.tabs(['Biblioteca e linha do tempo','Metas por instrumento','Auditoria e condições financeiras'])
     with a:
-        timeline=pd.DataFrame([d for d in items if d['data_assinatura']]);timeline['data']=pd.to_datetime(timeline.data_assinatura)
-        chart(px.scatter(timeline,x='data',y='tipo_documento',color='tipo_documento',hover_name='objeto',hover_data=['numero','objeto','escopo_alteracao'],title='Linha do tempo — datas de assinatura'))
+        chart(instrument_timeline(items),hovermode='closest')
         st.caption('8º TA → Rerratificação do 8º TA → Anexos rerratificados. Apostilamentos e aditivos possuem escopos próprios.')
         byid={d['document_id']:d for d in items};chosen=st.selectbox('Escolha o documento',list(byid),format_func=lambda x:document_label(byid[x]));document_view(byid[chosen],'instrument')
     with b:
