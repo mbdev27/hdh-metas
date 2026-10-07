@@ -11,7 +11,7 @@ from src.historical import real_data,aggregate,evidence
 from src.exports import csv_bytes,workbook
 from src.formatting import currency
 
-COLORS={'Atingida':'#24956a','Não alcançada':'#d29520','CRÍTICO':'#d35a64','SEM DADOS':'#93a3b4'}
+COLORS={'Atingida':'#24956a','Não atingida':'#d29520','CRÍTICO':'#d35a64','SEM DADOS':'#93a3b4'}
 
 def chart(fig):
     fig.update_layout(font=dict(family='sans-serif',color='#18364e'),paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='#ffffff',margin=dict(l=15,r=15,t=35,b=15),legend_title_text='',hovermode='x unified')
@@ -34,7 +34,7 @@ def source_name(identifier):
 def present_table(frame,columns=None):
     labels={'competencia':'Competência','nome':'Indicador','indicator_id':'Código','indicador':'Código','meta':'Meta','meta_contratual':'Meta contratual','meta_reported':'Meta no parecer','realizado':'Realizado','atingimento':'Alcance (%)','pontuacao':'Pontuação (p.p.)','diferenca':'Diferença','situacao':'Situação','contrato':'Contrato','periodo':'Período','meta_acumulada':'Meta acumulada','meses_presentes':'Meses disponíveis','cobertura':'Cobertura','documentos':'Fontes','valor':'Resultado','resultado_texto':'Resultado informado','meta_aplicada':'Meta aplicada','status_dado':'Situação dos dados','observacao':'Observações','documento_fonte':'Documento','pagina_fonte':'Página','instrumento_meta':'Instrumento da meta','peso':'Peso (p.p.)','inicio_vigencia':'Início','fim_vigencia':'Fim','unidade':'Unidade','secao_fonte':'Seção','tipo_alteracao':'Alteração','status_validacao':'Validação','tipo_documento':'Tipo','numero':'Número','objeto':'Objeto','escopo_alteracao':'Alteração','status':'Situação','observacoes':'Observações','periodo_avaliado':'Período avaliado','valor_mensal':'Valor mensal (R$)','inicio':'Início','fim':'Fim','data_assinatura':'Assinatura'}
     table=frame.copy()
-    if 'situacao' in table:table['situacao']=table.situacao.replace({'META ATINGIDA':'Atingida','ATENÇÃO':'Não alcançada','META NÃO ATINGIDA':'Não alcançada'})
+    if 'situacao' in table:table['situacao']=table.situacao.replace({'META ATINGIDA':'Atingida','ATENÇÃO':'Não atingida','META NÃO ATINGIDA':'Não atingida'})
     if columns is None:columns=[c for c in table.columns if c in labels]
     table=table[[c for c in columns if c in table]].copy()
     docs={d['document_id']:document_label(d) for d in public_documents()}
@@ -54,7 +54,11 @@ def document_view(d,key='library',show_notes=True):
     if d.get('arquivo_biblioteca'):
         path=ROOT/d['arquivo_biblioteca']
         if path.is_file():
-            st.download_button('Baixar documento PDF',path.read_bytes(),file_name=d['nome_arquivo'],mime='application/pdf',key=key+'_pdf_'+d['document_id'])
+            content=path.read_bytes()
+            st.download_button('Baixar documento PDF',content,file_name=d['nome_arquivo'],mime='application/pdf',key=key+'_pdf_'+d['document_id'])
+            if key=='cma' and d['tipo_documento']=='Parecer CMA':
+                from src.pdf_viewer import show_pdf
+                show_pdf(content,key+'_'+d['document_id'])
         else:st.info('Documento temporariamente indisponível para download.')
     else:st.info('Documento não disponível na biblioteca.')
 
@@ -119,7 +123,7 @@ def production_view(p,prefix='prod'):
     work,contract,year=filters(p,prefix)
     choices=sorted(work.indicator_id.unique());lookup=work.drop_duplicates('indicator_id').set_index('indicator_id').nome.to_dict()
     chosen=st.selectbox('Indicador assistencial',choices,format_func=lambda x:f'{x} · {lookup[x]}',key=prefix+'_indicator');series=work[work.indicator_id==chosen].sort_values('competencia').copy()
-    series['situacao']=series.situacao.replace({'META ATINGIDA':'Atingida','ATENÇÃO':'Não alcançada'})
+    series['situacao']=series.situacao.replace({'META ATINGIDA':'Atingida','ATENÇÃO':'Não atingida'})
     selected=st.selectbox('Competência',list(series.competencia),index=len(series)-1,key=prefix+'_month');row=series[series.competencia==selected].iloc[0]
     c=st.columns(4)
     for col,label,value in zip(c,['Meta contratual / referência histórica','Realizado','Alcance da meta pactuada','Pontuação financeira'],[f"{row.meta_contratual:,.0f}".replace(',','.'),'SEM DADOS' if pd.isna(row.realizado) else f"{row.realizado:,.0f}".replace(',','.'),'SEM DADOS' if pd.isna(row.atingimento) else f'{row.atingimento:.2f}%','NÃO AFERÍVEL' if pd.isna(row.pontuacao) else f'{row.pontuacao:.2f} p.p.']):col.metric(label,value)
@@ -148,10 +152,24 @@ def quality_view(q,prefix='quality'):
     ids=sorted(work.indicator_id.unique());lookup=work.drop_duplicates('indicator_id').set_index('indicator_id').nome.to_dict()
     chosen=st.selectbox('Indicador de qualidade / monitoramento',ids,format_func=lambda x:lookup[x],key=prefix+'_indicator');series=work[work.indicator_id==chosen].sort_values('competencia')
     st.info('Resultados qualitativos mensais transcritos dos pareceres. Não reconstruímos numeradores ou denominadores ausentes. Pontuação total não é aferível quando faltam evidências.')
-    numeric=series[series.valor.notna()]
-    if not numeric.empty:chart(px.line(numeric,x='competencia',y='valor',markers=True,title='Resultado mensal publicado',labels={'valor':'Valor informado'}))
-    else:st.caption('Indicador categórico ou sem valor numérico publicado; consulte a tabela mensal.')
-    present_table(series)
+    cards=st.columns(3)
+    cards[0].metric('Meses documentados',len(series))
+    cards[1].metric('Meses sem dados',int((series.status_dado=='SEM DADOS').sum()))
+    cards[2].metric('Inconsistências na fonte',int((series.status_dado=='INCONSISTÊNCIA NA FONTE').sum()))
+    if series.valor.notna().any():
+        chart(px.line(series,x='competencia',y='valor',markers=True,title='Resultado mensal publicado',labels={'valor':'Valor informado','competencia':'Competência'},hover_data=['resultado_texto','status_dado']))
+    else:
+        categorical=series.copy()
+        categorical['resultado_visual']=categorical.resultado_texto.fillna('Sem dados').replace('', 'Sem dados')
+        chart(px.scatter(categorical,x='competencia',y='resultado_visual',color='status_dado',symbol='status_dado',color_discrete_map={'INFORMADO':'#24956a','SEM DADOS':'#93a3b4','INCONSISTÊNCIA NA FONTE':'#d35a64'},title='Histórico dos resultados informados',labels={'competencia':'Competência','resultado_visual':'Resultado publicado','status_dado':'Situação dos dados'}))
+        st.caption('Resultados textuais são apresentados como categorias, sem conversão em pontuação ou valores numéricos.')
+    status_counts=series.groupby('status_dado').size().reset_index(name='meses')
+    chart(px.bar(status_counts,x='status_dado',y='meses',text='meses',title='Disponibilidade e qualidade das informações',labels={'status_dado':'Situação dos dados','meses':'Meses'}))
+    with st.expander('Consultar resultado e fonte por mês'):
+        comp=st.selectbox('Competência do resultado',series.competencia.tolist(),key=prefix+'_source_month')
+        result=series[series.competencia==comp].iloc[0]
+        st.write('**Resultado publicado:** '+str(result.resultado_texto or 'Sem dados'))
+        st.write('**Fonte:** '+source_name(result.documento_fonte)+' · página '+str(result.pagina_fonte))
     if (series.status_dado=='INCONSISTÊNCIA NA FONTE').any():st.warning('A fonte contém percentuais inconsistentes. Os valores foram preservados e sinalizados; não entram no cálculo financeiro.')
     st.caption('PONTUAÇÃO MENSAL · Projeções trimestrais qualitativas não são recalculadas sem evidências suficientes. Ocupação e prontuários sem peso próprio não compõem a parte variável.')
     foundation(series.iloc[-1].rule_indicator_id,series.iloc[-1].competencia,prefix)
@@ -216,7 +234,7 @@ def cma_sources(document,p):
 
 def cma(p,q):
     st.title('Comissão Mista de Avaliação');st.write('Pareceres, evidências e séries históricas para acompanhar resultados ao longo do tempo.')
-    a,b,c,d=st.tabs(['Pareceres','Histórico mensal','Comparação anual','Qualidade e evidências'])
+    a,c,d=st.tabs(['Pareceres','Comparação anual','Qualidade e evidências'])
     with a:
         items=[d for d in public_documents() if d['tipo_documento']=='Parecer CMA' and not d['excluido']]
         years=['Todos']+sorted({d['periodo_avaliado'][:4] for d in items},reverse=True);year=st.selectbox('Ano do parecer',years)
@@ -226,7 +244,6 @@ def cma(p,q):
         cma_sources(byid[chosen],p)
         st.caption('Pareceres são documentos de avaliação. Sua meta informada não altera, por si só, o instrumento contratual. Séries canônicas usam pareceres anuais para evitar dupla contagem; 2026 usa o parecer do 1º trimestre.')
         present_table(pd.DataFrame(selected),['periodo_avaliado','contrato','status'])
-    with b:production_view(p,'cma_history')
     with c:
         data=aggregate(p,'Y');ids=sorted(data.indicator_id.unique());chosen=st.selectbox('Indicador na comparação anual',ids,key='cma_annual_indicator');data=data[data.indicator_id==chosen]
         chart(px.bar(data,x='periodo',y=['realizado','meta_acumulada'],barmode='group',facet_col='contrato',title='Comparação anual por contrato'));present_table(data)

@@ -7,3 +7,4 @@ pyarrow>=19,<26
 dbfread>=2.0.7,<3
 bcrypt>=4.2,<6
 pytest>=8,<10
+PyMuPDF>=1.25,<2

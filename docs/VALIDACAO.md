@@ -10,8 +10,10 @@
 
 GitHub Actions confirmou pytest e compileall em Python 3.12 e 3.13 na integração inicial desta atualização (execução 37534635141). A criação/configuração do aplicativo no Streamlit Community Cloud é realizada pelo proprietário da conta. Upload via navegador não automatizado; leitores, validação e interface foram exercitados. Conferência visual no navegador e homologação institucional permanecem recomendadas. Validação do software não equivale a validação jurídica definitiva das regras ou de todas as células OCR.
 
-Polimento: biblioteca sem fundamentação legal, sem exposição de metadados técnicos ou datas ausentes; PDFs somente para download. Navegação lateral habilitada. Tratamento de falhas com mensagem pública genérica e logs internos.
+Polimento: biblioteca sem fundamentação legal, sem exposição de metadados técnicos ou datas ausentes; PDFs com download; pareceres CMA possuem prévia paginada do layout original. Navegação lateral habilitada. Tratamento de falhas com mensagem pública genérica e logs internos.
 
 Autenticação: cinco testes passaram após ajuste do usuário para admin, incluindo login, logout, bloqueio de tentativas, migração de configuração antiga sem alterar senha e ocultação da barra lateral no login.
 
 Ajustes finais: **64 testes passaram** na suíte completa local, incluindo acesso diretoria/GESTOR, preservação do administrador quando a configuração opcional é inválida, contatos e resumo da Tela inicial, seleção de todos os grupos de procedimentos e restrição da gestão de dados ao ADMIN. Compileall aprovado; Streamlit iniciou na porta 8503 com configuração headless.
+
+Gráficos de qualidade e visualizador CMA: **70 testes passaram** na suíte completa. Todos os PDFs CMA disponíveis renderizaram a primeira página; limites de página e alternativa de download para PDF inválido foram testados. A aba Histórico mensal foi removida da CMA, resultados numéricos mantêm lacunas e resultados textuais são exibidos por categoria, sem atribuição artificial de pontuação.

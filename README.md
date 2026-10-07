@@ -130,7 +130,7 @@ AIHs aprovadas não equivalem automaticamente a internações, saídas ou proced
 
 Originais: `data/sih/originais/`; observações normalizadas: `data/sih/observacoes.csv`; metadados e hashes: `config/sih_sources.json`. A página permite filtros, gráficos, tabelas e download dos originais e dos recortes em CSV/XLSX. Não existe consulta automática ao TabNet; a fonte é o conjunto de arquivos fornecido.
 
-A interface utiliza resumos e tabelas gerenciais, sem blocos JSON, hashes ou estruturas internas. A fundamentação legal é referência interna e não aparece na biblioteca. PDFs são oferecidos para download, preservando sua apresentação original. Erros técnicos ficam nos logs do servidor; mensagens do painel não mostram código nem traceback.
+A interface utiliza resumos e tabelas gerenciais, sem blocos JSON, hashes ou estruturas internas. A fundamentação legal é referência interna e não aparece na biblioteca. PDFs são oferecidos para download, preservando sua apresentação original. Pareceres CMA também possuem visualização paginada dentro do painel, com preservação do layout original e alternativa de download se a prévia falhar. Erros técnicos ficam nos logs do servidor; mensagens do painel não mostram código nem traceback.
 
 O usuário administrativo é `admin`. Configurações antigas com o nome `adm` são migradas automaticamente para `admin`, preservando o hash e a senha; o nome antigo não é aceito no login. A navegação lateral só fica visível após autenticação.
 

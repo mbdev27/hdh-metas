@@ -119,6 +119,7 @@ hdh-metas/
   src/formatting.py
   src/historical.py
   src/indicators.py
+  src/pdf_viewer.py
   src/portal.py
   src/safe_ui.py
   src/scoring.py
@@ -131,6 +132,7 @@ hdh-metas/
   tests/test_contract_engine.py
   tests/test_contract_versions.py
   tests/test_documentary_data.py
+  tests/test_pdf_viewer.py
   tests/test_presentation.py
   tests/test_quality_scoring.py
   tests/test_quantitative_scoring.py
