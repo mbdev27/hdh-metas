@@ -46,7 +46,7 @@ def management_summary(p,q):
     if quality.empty:st.info('Não há resultados qualitativos documentados nesta competência.')
     else:
         status=quality.groupby('situacao').size().reset_index(name='indicadores')
-        chart(px.bar(status,x='situacao',y='indicadores',text='indicadores',color='situacao',color_discrete_map={**COLORS,'Inconsistência':'#d35a64','Sem dados':'#93a3b4','Não aferível':'#93a3b4'},labels={'situacao':'Situação','indicadores':'Indicadores'},title='Qualidade e monitoramento — situação no período'))
+        chart(px.bar(status,x='situacao',y='indicadores',text='indicadores',color='situacao',color_discrete_map={**COLORS,'Inconsistência':'#d35a64','Sem dados':'#93a3b4','Não aferível':'#8064a2'},labels={'situacao':'Situação','indicadores':'Indicadores'},title='Qualidade e monitoramento — situação no período'))
     missing=int((quality.situacao.isin(['Sem dados','Inconsistência','Não aferível'])).sum()) if not quality.empty else 0
     financial_pending=int(production[production.peso.fillna(0)>0].pontuacao.isna().sum())
     financial_pending+=int(quality[quality.peso.fillna(0)>0].pontuacao.isna().sum()) if not quality.empty else 0
